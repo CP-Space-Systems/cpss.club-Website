@@ -29,7 +29,7 @@ window.CPSS_CONTENT = {
       "summary": "An active apogee-control system that adjusts air-brake deployment using flight-computer sensor data and a PID controller.",
       "lead": "Brian Payne",
       "date": "2024-2026",
-      "thumbnail": "/assets/images/bebop2.jpg",
+      "thumbnail": "/assets/images/bebop2.JPG",
       "thumbnailAlt": "Rocket air-brake mechanism",
       "featured": true
     },
