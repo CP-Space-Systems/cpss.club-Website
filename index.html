@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | CPSS</title>
+    <meta name="description" content="Cal Poly Space Systems — Home">
+    <link rel="stylesheet" href="./assets/css/site.css">
+    <script defer src="./assets/data/content.js"></script>
+    <script defer src="./assets/js/site.js"></script>
+    <link rel="preload" href="./assets/fonts/SpaceGrotesk-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  </head>
+  <body data-base="./" style="--topo-image: url('./assets/images/topo_round_1.svg')" data-home="true">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="./">
+          <img src="./assets/images/cpss_primary_logo.svg" alt="CPSS">
+          <span>Cal Poly Space Systems</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">Menu</button>
+        <nav id="primary-nav" aria-label="Main navigation">
+          <a href="./" aria-current="page">Home</a>
+          <a href="./projects/">Projects</a>
+          <a href="./team/">The Team</a>
+          <a href="./updates/">Updates</a>
+          <a href="./support-us/">Sponsors</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="page-main">
+      <div class="w-full pt-16 bg-background min-h-screen">
+        <div class="flex flex-col w-full">
+          <section class="home-hero" aria-labelledby="hero-title">
+            <!-- HERO MEDIA: replace the placeholder with your local video. Keep home-hero-media,
+         data-background-video, autoplay muted loop playsinline and the pause control.
+         See README.md for the complete copy/paste block. -->
+          <img  class="home-hero-media"  src="./assets/images/PhotoAlbumThumbnail.jpg" alt="" aria-hidden="true" style="opacity: 0.8">
+          <div class="home-hero-shade" aria-hidden="true"></div>
+          <div class="home-hero-content">
+              <img class="hero-logo" src="./assets/images/cpss_primary_logo_reversed.png" alt="CPSS">
+              <h1 id="hero-title">Cal Poly<br>Space Systems</h1>
+              <p class="hero-tagline">Design. Test. Launch. Recover.</p>
+              <a class="hero-project-link" href="./projects/">Explore Projects →</a>
+            </div>
+            <a class="hero-scroll-link" href="#home-content">Scroll to discover ↓</a>
+          </section>
+          <!-- Top Banner / Sub-Header Identity -->
+          <!-- Video Hero Area -->
+          <!-- About CPSS Section -->
+          <section class="home-intro content-wide topo-accent" id="home-content">
+            <h2 class="text-headline-lg uppercase text-primary tracking-tight section-title section-title--large">About CPSS</h2>
+            <div class="w-24 h-1 bg-primary-container mt-space-sm mb-space-lg"></div>
+            <div class="w-full flex flex-col gap-space-md text-left">
+              <div class="home-prose">
+                <h3 class="home-prose-title">Mission</h3>
+                <p class="text-body-lg text-on-surface leading-relaxed">Cal Poly Space Systems gives students hands-on experience in designing, building, testing, launching, and recovering rockets. Guided by Cal Poly’s “Learn by Doing” philosophy, we welcome participants from all majors and backgrounds to develop practical skills in propulsion, structures, controls, recovery, and electronics.</p>
+              </div>
+              <div class="home-prose">
+                <h3 class="home-prose-title">Heritage &amp; Background</h3>
+                <p class="text-body-md text-on-surface leading-relaxed">Based at California Polytechnic State University in San Luis Obispo, CPSS is built on student initiative, hard work, and independence. Our projects are designed, manufactured, and operated entirely by students. As these projects grow in complexity, we continue to expand our resources and capabilities to support increasingly ambitious work.</p>
+              </div>
+            </div>
+          </section>
+          <!-- Meeting Schedule & Logistics Section -->
+          <section class="meetings-band topo-accent" aria-labelledby="meetings-title">
+            <div class="content-wide meetings-inner">
+              <p class="meetings-kicker">Weekly Meetings</p>
+              <h2 id="meetings-title">Meeting Information</h2>
+              <h3 class="meeting-group-title">General Meetings</h3>
+              <dl class="meeting-details">
+                <div>
+                  <dt>Day</dt>
+                  <dd>Mondays</dd>
+                </div>
+                <div>
+                  <dt>Time</dt>
+                  <dd>6:00 PM</dd>
+                </div>
+                <div>
+                  <dt>Location</dt>
+                  <dd>Engineering IV, Room 321</dd>
+                </div>
+              </dl>
+              <h3 class="meeting-group-title">Workdays</h3>
+              <dl class="meeting-details">
+                <div>
+                  <dt>Day</dt>
+                  <dd>Saturdays</dd>
+                </div>
+                <div>
+                  <dt>Time</dt>
+                  <dd>10:00 AM</dd>
+                </div>
+                <div>
+                  <dt>Location</dt>
+                  <dd>Engineering IV, Room 321</dd>
+                </div>
+              </dl>
+            </div>
+          </section>
+          <!-- Current Projects Preview -->
+          <section class="home-current-projects content-wide topo-accent">
+            <div class="section-heading">
+              <h2 class="section-title section-title--large">Current Projects</h2>
+              <a href="./projects/">View all projects →</a>
+            </div>
+            <div data-project-list="home" class="home-projects"></div>
+          </section>
+          <!-- Media & Community Highlights -->
+          <section class="home-media-section topo-accent" style="background-color: rgb(255, 255, 255);">
+            <div class="content-wide flex flex-col gap-space-lg">
+              <div>
+                <h2 class="text-headline-md uppercase text-primary section-title">Media &amp; Community</h2>
+                <div class="w-12 h-1 bg-primary-container mt-space-xs"></div>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+                <div class="bg-white rounded-xl overflow-hidden border border-neutral-200 shadow-sm flex flex-col">
+                  <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/1XvwQR8ziM4" title="CPSS video" style="display: block; border: 0;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                  </iframe>
+                  <div class="p-space-md bg-white flex items-center justify-between border-t border-neutral-200">
+                    <span class="text-caption text-on-surface-variant">
+                      10 Years of propulsion testing!
+                    </span>
+                    <a class="text-label-md text-on-primary bg-primary hover:bg-primary-container px-space-md py-space-xs rounded-lg transition-colors" href="https://www.youtube.com/watch?v=1XvwQR8ziM4" target="_blank" rel="noopener noreferrer">
+                      Watch on YouTube
+                    </a>
+                  </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden border border-neutral-200 shadow-sm flex flex-col">
+                  <a href="https://arjanreyes.space/nextcloud/index.php/apps/memories/a/DzYlncAEqd6sqRzmg8rrOQN8NPr5uYmJ" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/images/PhotoAlbumThumbnail.jpg" alt="View the CPSS photo album" loading="lazy" style="display: block; width: 100%; height: auto;">
+                  </a>
+                  <div class="p-space-md bg-white flex items-center justify-between border-t border-neutral-200">
+                    <span class="text-caption text-on-surface-variant">
+                      CPSS photo album
+                    </span>
+                    <a class="text-label-md text-primary hover:text-secondary transition-colors" href="https://arjanreyes.space/nextcloud/index.php/apps/memories/a/DzYlncAEqd6sqRzmg8rrOQN8NPr5uYmJ" target="_blank" rel="noopener noreferrer">
+                      View all photos →
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Connect & Social Link Row -->
+          <section class="w-full py-space-xl px-gutter md:px-margin text-center" style="background-color: rgb(255, 255, 255);">
+            <div class="max-w-2xl mx-auto flex flex-col items-center gap-space-md">
+              <span class="text-label-md text-primary">Connect With CPSS</span>
+              <!-- <p class="text-body-md text-on-surface-variant">[Short description]</p> -->
+              <div class="flex flex-wrap items-center justify-center gap-space-md pt-space-xs">
+                <a aria-label="YouTube Channel" class="px-space-md py-space-xs bg-white border border-neutral-200 rounded-lg text-primary hover:bg-primary hover:text-on-primary transition-colors text-label-md" href="https://www.youtube.com/@CalPolySpaceSystems" target="_blank" rel="noopener noreferrer">YouTube</a>
+                <a aria-label="Email Cal Poly Space Systems" class="px-space-md py-space-xs bg-white border border-neutral-200 rounded-lg text-primary hover:bg-primary hover:text-on-primary transition-colors text-label-md" href="mailto:cpss@calpoly.edu">Email</a>
+                <a aria-label="Instagram Account" class="px-space-md py-space-xs bg-white border border-neutral-200 rounded-lg text-primary hover:bg-primary hover:text-on-primary transition-colors text-label-md" href="https://www.instagram.com/calpolyspacesystems/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a aria-label="LinkedIn Organization" class="px-space-md py-space-xs bg-white border border-neutral-200 rounded-lg text-primary hover:bg-primary hover:text-on-primary transition-colors text-label-md" href="https://www.linkedin.com/company/cal-poly-space-systems" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <img src="./assets/images/cpss_primary_logo_reversed.png" alt="CPSS" width="110">
+          <h2>Cal Poly Space Systems</h2>
+          <p>Design. Test. Launch. Recover.</p>
+        </div>
+        <nav aria-label="Footer">
+          <a href="./projects/">Projects</a>
+          <a href="./publications/">Publications</a>
+          <a href="./updates/">Updates</a>
+          <a href="./team/#contact">Contact</a>
+          <a href="./support-us/">Support CPSS</a>
+        </nav>
+        <div class="footer-social">
+          <a href="mailto:cpss@calpoly.edu">cpss@calpoly.edu</a>
+          <a href="https://www.youtube.com/@CalPolySpaceSystems" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a href="https://www.instagram.com/calpolyspacesystems/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.linkedin.com/company/cal-poly-space-systems" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <p>© Cal Poly Space Systems</p>
+        </div>
+      </div>
+    </footer>
+    <dialog id="image-dialog" aria-label="Enlarged image">
+      <button type="button" data-close-dialog>Close</button>
+      <img alt="">
+      <p></p>
+    </dialog>
+    <p class="link-notice" role="status" hidden></p>
+  </body>
+</html>
