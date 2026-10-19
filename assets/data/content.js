@@ -16,21 +16,21 @@ window.CPSS_CONTENT = {
       "thumbnailAlt": "Archerfish liquid rocket",
       "featured": true
     },
-    {
-      "slug": "air-brakes",
-      "title": "Air Brakes",
-      "status": "Ready to Launch.",
-      "tags": [
-        "Flight Controls",
-        "Avionics"
-      ],
-      "summary": "An active apogee-control system that adjusts air-brake deployment using flight-computer sensor data and a PID controller.",
-      "lead": "Brian Payne",
-      "date": "2024",
-      "thumbnail": "assets/images/bebop-02.jpg",
-      "thumbnailAlt": "Rocket air-brake mechanism",
-      "featured": false
-    },
+    // {
+    //   "slug": "air-brakes",
+    //   "title": "Air Brakes",
+    //   "status": "Ready to Launch.",
+    //   "tags": [
+    //     "Flight Controls",
+    //     "Avionics"
+    //   ],
+    //   "summary": "An active apogee-control system that adjusts air-brake deployment using flight-computer sensor data and a PID controller.",
+    //   "lead": "Brian Payne",
+    //   "date": "2024",
+    //   "thumbnail": "assets/images/bebop-02.jpg",
+    //   "thumbnailAlt": "Rocket air-brake mechanism",
+    //   "featured": false
+    // },
     {
       "slug": "flyback-boosters",
       "title": "Recoverable Booster Program",
@@ -91,21 +91,21 @@ window.CPSS_CONTENT = {
     //   "thumbnailAlt": "Engine throttling project",
     //   "featured": false
     // },
-    // {
-    //   "slug": "ablative-engine-successor",
-    //   "title": "Ablative Engine",
-    //   "status": "Manufacturing",
-    //   "tags": [
-    //     "Liquid Propulsion",
-    //     "Research & Development"
-    //   ],
-    //   "summary": "Developing a 300lbf liquid bipropellant liquid rocket engine with separate impinging, film, and pintle injectors. This engine will take less time and be much easier to assemble than our previous version, improving testing cadence.",
-    //   "lead": "Noah Shefer, Devin Chen",
-    //   "date": "2026-10-06",
-    //   "thumbnail": "assets/images/ablative-engine-cutaway.png",
-    //   "thumbnailAlt": "Ablative Engine cutaway rendering",
-    //   "featured": false
-    // },
+    {
+      "slug": "ablative-engine-successor",
+      "title": "Ablative Engine",
+      "status": "Manufacturing",
+      "tags": [
+        "Liquid Propulsion",
+        "Research & Development"
+      ],
+      "summary": "Developing a 300lbf liquid bipropellant liquid rocket engine with separate impinging, film, and pintle injectors. This engine will take less time and be much easier to assemble than our previous version, improving testing cadence.",
+      "lead": "Noah Shefer, Devin Chen",
+      "date": "2026-10-06",
+      "thumbnail": "assets/images/ablative-engine-cutaway.png",
+      "thumbnailAlt": "Ablative Engine cutaway rendering",
+      "featured": true
+    },
     // {
     //   "slug": "sille",
     //   "title": "SILL-E",
