@@ -1,0 +1,27 @@
+/* Team media only; retain the existing site typography, colors and profile grid. */
+.team-group-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+  object-fit: contain;
+}
+
+.team-member-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+}
+
+.team-member-photo--pending {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.team-member-initials {
+  font-size: 2rem;
+}

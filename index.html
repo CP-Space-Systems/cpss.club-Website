@@ -10,12 +10,12 @@
     <script defer src="./assets/js/site.js"></script>
     <link rel="preload" href="./assets/fonts/SpaceGrotesk-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
-  <body data-base="./" style="--topo-image: url('./assets/images/topo_round_1.svg')" data-home="true">
+  <body data-base="./" style="--topo-image: url('./assets/images/topo-round-01.svg')" data-home="true">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href="./">
-          <img src="./assets/images/cpss_primary_logo.svg" alt="CPSS">
+          <img src="./assets/images/cpss-primary-logo.svg" alt="CPSS">
           <span>Cal Poly Space Systems</span>
         </a>
         <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">Menu</button>
@@ -24,7 +24,7 @@
           <a href="./projects/">Projects</a>
           <a href="./team/">The Team</a>
           <a href="./updates/">Updates</a>
-          <a href="./support-us/">Sponsors</a>
+          <a href="./support-us/" data-sponsorship-link hidden>Sponsors</a>
         </nav>
       </div>
     </header>
@@ -35,10 +35,10 @@
             <!-- HERO MEDIA: replace the placeholder with your local video. Keep home-hero-media,
          data-background-video, autoplay muted loop playsinline and the pause control.
          See README.md for the complete copy/paste block. -->
-          <img  class="home-hero-media"  src="./assets/images/PhotoAlbumThumbnail.jpg" alt="" aria-hidden="true" style="opacity: 0.8">
-          <div class="home-hero-shade" aria-hidden="true"></div>
-          <div class="home-hero-content">
-              <img class="hero-logo" src="./assets/images/cpss_primary_logo_reversed.png" alt="CPSS">
+            <img class="home-hero-media" src="./assets/images/photo-album-thumbnail.jpg" alt="" aria-hidden="true" style="opacity: 0.8">
+            <div class="home-hero-shade" aria-hidden="true"></div>
+            <div class="home-hero-content">
+              <img class="hero-logo" src="./assets/images/cpss-primary-logo-reversed.png" alt="CPSS">
               <h1 id="hero-title">Cal Poly<br>Space Systems</h1>
               <p class="hero-tagline">Design. Test. Launch. Recover.</p>
               <a class="hero-project-link" href="./projects/">Explore Projects →</a>
@@ -59,8 +59,81 @@
               <div class="home-prose">
                 <h3 class="home-prose-title">Heritage &amp; Background</h3>
                 <p class="text-body-md text-on-surface leading-relaxed">Based at California Polytechnic State University in San Luis Obispo, CPSS is built on student initiative, hard work, and independence. Our projects are designed, manufactured, and operated entirely by students. As these projects grow in complexity, we continue to expand our resources and capabilities to support increasingly ambitious work.</p>
+                <p class="text-body-md text-on-surface leading-relaxed">Our roots reach back to Cal Poly’s Space Program in the late 1970s. Students across departments developed Space Shuttle Get Away Special payloads, and Cal Poly Space Systems was chartered as an ASI club in 1989. That interdisciplinary, hands-on heritage continues in today’s student-led projects.</p>
               </div>
             </div>
+          </section>
+          <section class="heritage-history content-wide topo-accent" id="heritage" aria-labelledby="heritage-title">
+            <p class="heritage-kicker">From the CPSS archives</p>
+            <h2 class="section-title section-title--large" id="heritage-title">A history of building.</h2>
+            <div class="history-layout">
+              <ol class="history-chronology">
+                <li>
+                  <span class="history-year">1978–1979</span>
+                  <h3>Space Program beginnings</h3>
+                  <p>A donated Space Shuttle payload opportunity in 1978 led to the Physics Department’s Cal Poly Space Program in 1979. Students worked on self-contained experimental canisters.</p>
+                </li>
+                <li>
+                  <span class="history-year">1980s</span>
+                  <h3>Shuttle payload development</h3>
+                  <p>Students from multiple departments designed and analyzed Get Away Special experiments. The archival material includes electroplating concepts, EVA welding workstation designs and proposed long-duration biological experiments.</p>
+                </li>
+                <li>
+                  <span class="history-year">1989</span>
+                  <h3>CPSS becomes a club</h3>
+                  <p>Cal Poly Space Systems was chartered by ASI, continuing an interdisciplinary student space-program tradition.</p>
+                </li>
+                <li>
+                  <span class="history-year">1993</span>
+                  <h3>GAS-450 flies</h3>
+                  <p>The GAS-450 payload brought student experiments to orbit on STS-57, which launched June 21, 1993. The payload returned for student analysis after the mission.</p>
+                </li>
+                <li>
+                  <span class="history-year">Late 1990s–2000s</span>
+                  <h3>Toward student rocketry</h3>
+                  <p>The archive records sounding-rocket and paraglider work, followed by Starbooster, Rocketoon and hybrid-propulsion projects.</p>
+                </li>
+                <li>
+                  <span class="history-year">Today</span>
+                  <h3>Learn by Doing continues</h3>
+                  <p>CPSS members develop flight vehicles, propulsion systems, avionics and recovery technologies through student-led design, manufacturing and testing.</p>
+                </li>
+              </ol>
+              <div class="carousel" data-carousel tabindex="0" aria-label="CPSS historical archive photographs" aria-roledescription="carousel">
+                <div class="carousel-slides">
+                  <figure data-slide>
+                    <img src="./assets/images/history/cal-poly-space-program-origins.jpg" alt="CPSS archive: Start of Cal Poly Space Program" loading="lazy">
+                    <figcaption>Start of Cal Poly Space Program</figcaption>
+                  </figure>
+                  <figure data-slide hidden>
+                    <img src="./assets/images/history/gas-experiment-1988.jpg" alt="CPSS archive: Cal Poly GAS Experiment 1988" loading="lazy">
+                    <figcaption>Cal Poly GAS Experiment 1988</figcaption>
+                  </figure>
+                  <figure data-slide hidden>
+                    <img src="./assets/images/history/eva-welding-concept-1989.jpg" alt="CPSS archive: 1989 G-169 GAS EVA Welding Workstation Design Concept" loading="lazy">
+                    <figcaption>1989 G-169 GAS EVA Welding Workstation Design Concept</figcaption>
+                  </figure>
+                  <figure data-slide hidden>
+                    <img src="./assets/images/history/eva-welding-detail-1989.jpg" alt="CPSS archive: 1989 G-169 GAS EVA Welding Workstation Design Detail" loading="lazy">
+                    <figcaption>1989 G-169 GAS EVA Welding Workstation Design Detail</figcaption>
+                  </figure>
+                  <figure data-slide hidden>
+                    <img src="./assets/images/history/cpss-experiment-1992.jpg" alt="CPSS archive: CPSS Experiment from early 1992" loading="lazy">
+                    <figcaption>CPSS Experiment from early 1992</figcaption>
+                  </figure>
+                  <figure data-slide hidden>
+                    <img src="./assets/images/history/gas-450-cylinder-1992.jpg" alt="CPSS archive: GAS 450 Cylinder Assembly 1992" loading="lazy">
+                    <figcaption>GAS 450 Cylinder Assembly 1992</figcaption>
+                  </figure>
+                </div>
+                <div class="carousel-controls">
+                  <button type="button" data-prev aria-label="Previous archival image">Previous</button>
+                  <span data-position aria-live="polite"></span>
+                  <button type="button" data-next aria-label="Next archival image">Next</button>
+                </div>
+              </div>
+            </div>
+            <p class="history-source">Historical summaries and images: CPSS archive. <a href="https://ntrs.nasa.gov/citations/19940014691" target="_blank" rel="noopener noreferrer">NASA GAS-450 flight report</a>.</p>
           </section>
           <!-- Meeting Schedule & Logistics Section -->
           <section class="meetings-band topo-accent" aria-labelledby="meetings-title">
@@ -129,7 +202,7 @@
                 </div>
                 <div class="bg-white rounded-xl overflow-hidden border border-neutral-200 shadow-sm flex flex-col">
                   <a href="https://arjanreyes.space/nextcloud/index.php/apps/memories/a/DzYlncAEqd6sqRzmg8rrOQN8NPr5uYmJ" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/images/PhotoAlbumThumbnail.jpg" alt="View the CPSS photo album" loading="lazy" style="display: block; width: 100%; height: auto;">
+                    <img src="./assets/images/photo-album-thumbnail.jpg" alt="View the CPSS photo album" loading="lazy" style="display: block; width: 100%; height: auto;">
                   </a>
                   <div class="p-space-md bg-white flex items-center justify-between border-t border-neutral-200">
                     <span class="text-caption text-on-surface-variant">
@@ -162,7 +235,7 @@
     <footer class="site-footer">
       <div class="footer-inner">
         <div>
-          <img src="./assets/images/cpss_primary_logo_reversed.png" alt="CPSS" width="110">
+          <img src="./assets/images/cpss-primary-logo-reversed.png" alt="CPSS" width="110">
           <h2>Cal Poly Space Systems</h2>
           <p>Design. Test. Launch. Recover.</p>
         </div>
@@ -171,7 +244,7 @@
           <a href="./publications/">Publications</a>
           <a href="./updates/">Updates</a>
           <a href="./team/#contact">Contact</a>
-          <a href="./support-us/">Support CPSS</a>
+          <a href="./support-us/" data-sponsorship-link hidden>Support CPSS</a>
         </nav>
         <div class="footer-social">
           <a href="mailto:cpss@calpoly.edu">cpss@calpoly.edu</a>

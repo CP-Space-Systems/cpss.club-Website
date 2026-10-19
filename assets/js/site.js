@@ -170,7 +170,7 @@
         const article = make('article', undefined, 'update-entry');
         const heading = make('h3');
         heading.append(link(update.title, `updates/${update.slug}/`));
-        article.append(make('p', update.date || '[Date]', 'project-meta'), heading, make('p', update.summary),
+        article.append(make('p', update.dateLabel || update.date || '[Date]', 'project-meta'), heading, make('p', update.summary),
           link('Read article →', `updates/${update.slug}/`));
         section.append(article);
       });

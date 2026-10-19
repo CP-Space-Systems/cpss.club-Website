@@ -1993,7 +1993,7 @@ p[class], span[class], a[class], label[class] {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: url('../images/topo_sharp_1.svg') right center / 740px auto no-repeat;
+  background: url('../images/topo-sharp-01.svg') right center / 740px auto no-repeat;
   filter: brightness(0) invert(1);
   opacity: .16;
   pointer-events: none;
@@ -2270,7 +2270,7 @@ h3.home-prose-title {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: url('../images/topo_sharp_2.svg') left 700px / 680px auto repeat-y;
+  background: url('../images/topo-sharp-02.svg') left 700px / 680px auto repeat-y;
   opacity: .08;
   pointer-events: none;
 }
@@ -2283,7 +2283,7 @@ h3.home-prose-title {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: url('../images/topo_round_2.svg') right center / 760px auto no-repeat;
+  background: url('../images/topo-round-02.svg') right center / 760px auto no-repeat;
   opacity: .12;
   pointer-events: none;
 }
@@ -2401,3 +2401,26 @@ h3.home-prose-title {
     height: 460px;
   }
 }
+
+.projects-directory [data-project-slug="ablative-engine-successor"] .project-media img {
+  max-height: 360px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* V07 homepage history: archive photographs, student milestones, existing palette. */
+.heritage-history { padding-top: 40px; padding-bottom: 72px; }
+.heritage-kicker { color: #795900; font-size: 15px; }
+.history-layout { display: grid; grid-template-columns: 1fr 1.1fr; align-items: start; gap: 56px; }
+.history-chronology { list-style: none; margin: 0; padding: 0 0 0 24px; border-left: 2px solid #fec73f; }
+.history-chronology li { margin: 0 0 36px; }
+.history-year { color: #795900; font-size: 15px; }
+.history-chronology h3 { font-size: 24px; margin: 8px 0; }
+.history-chronology p { font-size: 17px; line-height: 1.6; margin: 0; }
+.heritage-history .carousel { position: sticky; top: 110px; min-width: 0; }
+.heritage-history .carousel img { width: 100%; height: auto; max-height: 620px; object-fit: contain; }
+.history-source { font-size: 14px; color: #53615a; margin-top: 24px; }
+@media (max-width: 900px) { .history-layout { grid-template-columns: 1fr; gap: 28px; } .heritage-history .carousel { position: static; } }
+
+

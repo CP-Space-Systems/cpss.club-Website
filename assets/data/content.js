@@ -1,20 +1,18 @@
-/* Project/publication previews only. Full page content lives in each folder/index.html.
-   Catalog paths are relative to the site root; tags build filters automatically.
-   featured controls homepage selection; homeProjectLimit sets the maximum. */
+/* EDIT HERE: metadata only. Paths have NO leading slash; match filename case. */
 window.CPSS_CONTENT = {
   "projects": [
     {
       "slug": "archerfish",
       "title": "Archerfish",
-      "status": "Launching December 5, 2026",
+      "status": "Testing",
       "tags": [
         "Flight Vehicles",
         "Liquid Propulsion"
       ],
-      "summary": "A pump-fed liquid rocket bringing together CPSS propulsion, structures, and avionics development into a nitrous oxide and ethanol flight vehicle.",
+      "summary": "A student-driven bipropellant flight vehicle aiming to demonstrate a fuel pump-fed rocket, designed for 400 lbf thrust and a target apogee of 13,000 ft.",
       "lead": "Jasmine Cheng",
-      "date": "",
-      "thumbnail": "assets/images/af_thumb1.png",
+      "date": "2026-10-06",
+      "thumbnail": "assets/images/archerfish-01.png",
       "thumbnailAlt": "Archerfish liquid rocket",
       "featured": true
     },
@@ -28,131 +26,131 @@ window.CPSS_CONTENT = {
       ],
       "summary": "An active apogee-control system that adjusts air-brake deployment using flight-computer sensor data and a PID controller.",
       "lead": "Brian Payne",
-      "date": "2024-2026",
-      "thumbnail": "assets/images/bebop2.JPG",
+      "date": "2024",
+      "thumbnail": "assets/images/bebop-02.jpg",
       "thumbnailAlt": "Rocket air-brake mechanism",
-      "featured": true
+      "featured": false
     },
     {
       "slug": "flyback-boosters",
-      "title": "Fly-back Booster Program",
-      "status": "[Current status]",
+      "title": "Recoverable Booster Program",
+      "status": "Ongoing",
       "tags": [
         "Flight Vehicles",
         "Flight Controls"
       ],
-      "summary": "Development of rocket-powered, radio-controlled glide-back boosters, continuing CPSS work on Space Shuttle-inspired launch configurations.",
+      "summary": "CPSS's recoverable booster project is designing a multistage vehicle equipped with a centerstage supported by two twin rocket-boosted, radio-controlled gliders. This project seeks to create a fleet of reusable and reliable boosters capable of supporting any future centerstage vehicles designed by the club.",
       "lead": "Shiva Pulmamidi",
-      "date": "",
-      "thumbnail": "",
-      "thumbnailAlt": "Fly-back booster project",
-      "featured": false
-    },
-    {
-      "slug": "regen-engine",
-      "title": "Regeneratively Cooled Engine",
-      "status": "Amid Design and Analysis",
-      "tags": [
-        "Liquid Propulsion",
-        "Research & Development"
-      ],
-      "summary": "Research and preliminary design of regeneratively cooled engines to support future liquid-propellant vertical takeoff and landing development.",
-      "lead": "Sloan Robbins, Ellen Poulsen",
-      "date": "",
-      "thumbnail": "",
-      "thumbnailAlt": "Regeneratively cooled engine project",
-      "featured": false
-    },
-    {
-      "slug": "tvc",
-      "title": "Thrust Vector Control",
-      "status": "[Current status]",
-      "tags": [
-        "Flight Controls",
-        "Research & Development"
-      ],
-      "summary": "Research into thrust vector control as part of CPSS development toward a liquid-propellant vertical takeoff and landing vehicle.",
-      "lead": "Gustavo Chavez",
-      "date": "",
-      "thumbnail": "",
-      "thumbnailAlt": "Thrust vector control project",
-      "featured": false
-    },
-    {
-      "slug": "throttling",
-      "title": "Engine Throttling",
-      "status": "[Current status]",
-      "tags": [
-        "Liquid Propulsion",
-        "Research & Development"
-      ],
-      "summary": "Research into engine throttling systems to support future liquid-propellant vertical takeoff and landing development.",
-      "lead": "Robbert Saunders",
-      "date": "",
-      "thumbnail": "",
-      "thumbnailAlt": "Engine throttling project",
-      "featured": false
-    },
-    {
-      "slug": "ablative-engine-successor",
-      "title": "Ablative Engine",
-      "status": "[Current status]",
-      "tags": [
-        "Liquid Propulsion",
-        "Research & Development"
-      ],
-      "summary": "[Ablative engine successor project summary]",
-      "lead": "Noah Shefer",
-      "date": "",
-      "thumbnail": "",
-      "thumbnailAlt": "Ablative engine successor project",
-      "featured": false
-    },
-    {
-      "slug": "sille",
-      "title": "SILL-E",
-      "status": "Over 20 teams in the design phase",
-      "tags": [
-        "Liquid Propulsion",
-        "Education"
-      ],
-      "summary": "The Student Introductory Liquids Learning Engine program introduces members to liquid engine design, analysis, manufacturing, and mentored testing.",
-      "lead": "Lishen Lin, Ellen Poulsen",
-      "date": "",
-      "thumbnail": "assets/images/tau-hot-fire-2026-09-27.png",
-      "thumbnailAlt": "TAU engine hot-fire test",
+      "date": "2026-10-11",
+      "thumbnail": "assets/images/recoverable-booster-01.jpeg",
+      "thumbnailAlt": "Booster team loading the prototype vehicle onto a launch rail",
       "featured": true
     },
+    // {
+    //   "slug": "regen-engine",
+    //   "title": "Regeneratively Cooled Engine",
+    //   "status": "Amid Design and Analysis",
+    //   "tags": [
+    //     "Liquid Propulsion",
+    //     "Research & Development"
+    //   ],
+    //   "summary": "Research and preliminary design of regeneratively cooled engines to support future liquid-propellant vertical takeoff and landing development.",
+    //   "lead": "Sloan Robbins, Ellen Poulsen",
+    //   "date": "2026",
+    //   "thumbnail": "",
+    //   "thumbnailAlt": "Regeneratively cooled engine project",
+    //   "featured": false
+    // },
+    // {
+    //   "slug": "tvc",
+    //   "title": "Thrust Vector Control",
+    //   "status": "[Current status]",
+    //   "tags": [
+    //     "Flight Controls",
+    //     "Research & Development"
+    //   ],
+    //   "summary": "Research into thrust vector control as part of CPSS development toward a liquid-propellant vertical takeoff and landing vehicle.",
+    //   "lead": "Gustavo Chavez",
+    //   "date": "2026",
+    //   "thumbnail": "",
+    //   "thumbnailAlt": "Thrust vector control project",
+    //   "featured": false
+    // },
+    // {
+    //   "slug": "throttling",
+    //   "title": "Engine Throttling",
+    //   "status": "Prototype development",
+    //   "tags": [
+    //     "Liquid Propulsion",
+    //     "Research & Development"
+    //   ],
+    //   "summary": "To throttle rocket thrust between 60-100% to control a flight vehicle for the HOP challenge.",
+    //   "lead": "Rob Saunders and Gus Chavez",
+    //   "date": "2026-10-10",
+    //   "thumbnail": "",
+    //   "thumbnailAlt": "Engine throttling project",
+    //   "featured": false
+    // },
+    // {
+    //   "slug": "ablative-engine-successor",
+    //   "title": "Ablative Engine",
+    //   "status": "Manufacturing",
+    //   "tags": [
+    //     "Liquid Propulsion",
+    //     "Research & Development"
+    //   ],
+    //   "summary": "Developing a 300lbf liquid bipropellant liquid rocket engine with separate impinging, film, and pintle injectors. This engine will take less time and be much easier to assemble than our previous version, improving testing cadence.",
+    //   "lead": "Noah Shefer, Devin Chen",
+    //   "date": "2026-10-06",
+    //   "thumbnail": "assets/images/ablative-engine-cutaway.png",
+    //   "thumbnailAlt": "Ablative Engine cutaway rendering",
+    //   "featured": false
+    // },
+    // {
+    //   "slug": "sille",
+    //   "title": "SILL-E",
+    //   "status": "Over 10 teams in the design phase",
+    //   "tags": [
+    //     "Liquid Propulsion",
+    //     "Education"
+    //   ],
+    //   "summary": "The Student Introductory Liquids Learning Engine program introduces members to liquid engine design, analysis, manufacturing, and mentored testing.",
+    //   "lead": "Lishen Lin, Ellen Poulsen",
+    //   "date": "2025",
+    //   "thumbnail": "assets/images/tau-hot-fire-2026-09-27.png",
+    //   "thumbnailAlt": "TAU engine hot-fire test",
+    //   "featured": true
+    // },
     {
       "slug": "cert-rockets",
       "title": "Certification Rockets",
-      "status": "+10 L1 Cert Rockets under construction",
+      "status": "15 Students pursuing L1 and 6 pursuing L2.",
       "tags": [
         "Flight Vehicles",
         "Education"
       ],
-      "summary": "A hands-on program helping members build, launch, and recover rockets while working toward Level 1 and Level 2 Tripoli rocketry certifications.",
-      "lead": "[Program lead]",
-      "date": "",
-      "thumbnail": "assets/images/Certs_02.jpg",
+      "summary": "This project is designed to help club members develop skills in designing and building rockets by constructing scratch-built kits to certify L1 or L2 with the Tripoli Association of Rocketry. Members will learn how to use two-part epoxy, laser cutters, 3D printers, and CAD software and have many opportunities to work on experimental rockets.",
+      "lead": "Margot Peterson",
+      "date": "2026-10-11",
+      "thumbnail": "assets/images/certification-launch-01.jpg",
       "thumbnailAlt": "Student certification rocket launch",
       "featured": false
     },
-    {
-      "slug": "tom",
-      "title": "TOM Flight Computer",
-      "status": "[Current status]",
-      "tags": [
-        "Avionics",
-        "Flight Controls"
-      ],
-      "summary": "An adaptable flight computer combining onboard sensors, data logging, and LoRa telemetry around a Raspberry Pi Compute Module 5.",
-      "lead": "[Project lead]",
-      "date": "",
-      "thumbnail": "assets/images/TOM_01.jpg",
-      "thumbnailAlt": "TOM flight computer board",
-      "featured": false
-    }
+    // {
+    //   "slug": "tom",
+    //   "title": "TOM Flight Computer",
+    //   "status": "[Current status]",
+    //   "tags": [
+    //     "Avionics",
+    //     "Flight Controls"
+    //   ],
+    //   "summary": "An adaptable flight computer combining onboard sensors, data logging, and LoRa telemetry around a Raspberry Pi Compute Module 5.",
+    //   "lead": "[Project lead]",
+    //   "date": "2024",
+    //   "thumbnail": "assets/images/tom-flight-computer.jpg",
+    //   "thumbnailAlt": "TOM flight computer board",
+    //   "featured": false
+    // }
   ],
   "publications": [
     {
@@ -167,28 +165,38 @@ window.CPSS_CONTENT = {
       "summary": "Archerfish design review covering mission scope, fluids, ground support equipment, aerodynamics, structures, recovery, avionics, testing, and budget.",
       "authors": "Cal Poly Space Systems",
       "link": "publications/archerfish-cdr/"
+    },
+    {
+      "slug": "booster-pdr",
+      "title": "Sonata II (Ragtime) Preliminary Design Review",
+      "type": "Design review",
+      "date": "",
+      "tags": [
+        "Flight Vehicles",
+        "Flight Controls"
+      ],
+      "summary": "Design review presentation supplied with the recoverable booster project.",
+      "authors": "Cal Poly Space Systems",
+      "link": "publications/booster-pdr/"
     }
   ],
   "updates": [
     {
-      "slug": "professional-update",
-      "title": "[Professional update title]",
+      "slug": "spring-2026-quarterly-update",
+      "title": "Spring 2026: Testing, Building, and Preparing for Flight",
       "category": "professional",
       "date": "",
-      "summary": "[Update excerpt]",
-      "thumbnail": ""
-    },
-    {
-      "slug": "club-blog",
-      "title": "[Club blog title]",
-      "category": "blog",
-      "date": "",
-      "summary": "[Blog excerpt]",
-      "thumbnail": ""
+      "dateLabel": "Spring 2026",
+      "summary": "From Archerfish engine testing to a successful SILLE hotfire, CPSS teams advanced propulsion, avionics, and student training throughout the spring quarter.",
+      "thumbnail": "assets/images/photo-album-thumbnail.jpg"
     }
   ]
 };
-
+window.CPSS_SETTINGS = {
+  "contactEmail": "cpss@calpoly.edu",
+  "formEndpoint": "",
+  "homeProjectLimit": 3
+};
 /* Disabled NILE draft from your v03 upload. Copy this object into projects to list it.
 {
   "slug": "nile",
@@ -203,10 +211,3 @@ window.CPSS_CONTENT = {
   "featured": false
 },
 */
-
-/* Confirmed contact address; leave formEndpoint empty for mailto drafts. */
-window.CPSS_SETTINGS = {
-  "contactEmail": "cpss@calpoly.edu",
-  "formEndpoint": "",
-  "homeProjectLimit": 3
-};

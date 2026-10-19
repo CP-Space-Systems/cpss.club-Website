@@ -9,13 +9,16 @@
     <script defer src="../../assets/data/content.js"></script>
     <script defer src="../../assets/js/site.js"></script>
     <link rel="preload" href="../../assets/fonts/SpaceGrotesk-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assets/css/project.css">
+    <script src="../../assets/js/project.js" defer></script>
+    <script src="../../assets/js/data-charts.js" defer></script>
   </head>
-  <body data-base="../../" style="--topo-image: url('../../assets/images/topo_sharp_2.svg')">
+  <body data-base="../../" style="--topo-image: url('../../assets/images/topo-sharp-02.svg')" class="project-page">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href="../../">
-          <img src="../../assets/images/cpss_primary_logo.svg" alt="CPSS">
+          <img src="../../assets/images/cpss-primary-logo.svg" alt="CPSS">
           <span>Cal Poly Space Systems</span>
         </a>
         <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">Menu</button>
@@ -24,79 +27,202 @@
           <a href="../../projects/" aria-current="page">Projects</a>
           <a href="../../team/">The Team</a>
           <a href="../../updates/">Updates</a>
-          <a href="../../support-us/">Sponsors</a>
+          <a href="../../support-us/" data-sponsorship-link hidden>Sponsors</a>
         </nav>
       </div>
     </header>
-    <main id="main" class="page-main">
-      <div class="max-w-5xl mx-auto px-margin-mobile md:px-margin py-space-xl">
-        <a href="../../projects/">← Back to Projects</a>
-        <header class="project-heading">
-          <h1 class="text-display-hero uppercase text-primary page-title">Air Brakes</h1>
-          <p>Ready to Launch. · [Last updated]</p>
-          <p class="text-body-lg">An active apogee-control system that adjusts air-brake deployment using flight-computer sensor data and a PID controller.</p>
-          <div class="project-tags">
-            <span>Flight Controls</span>
-            <span>Avionics</span>
-          </div>
-          <p class="project-lead">Lead: Brian Payne</p>
-        </header>
-        <div class="media-placeholder aspect-video" role="img" aria-label="Project hero image placeholder">[Project hero image]</div>
-        <section class="module">
-          <h2 class="section-title section-title--large">Background &amp; rationale</h2>
-          <p>[Project background]</p>
-        </section>
-        <section class="module">
-          <h2 class="section-title">Goals</h2>
-          <ul>
-            <li>[Project goal]</li>
-            <li>[Project goal]</li>
-          </ul>
-        </section>
-        <section class="module">
-          <h2 class="section-title">Progress &amp; current work</h2>
-          <p>[Current work]</p>
-        </section>
-        <section class="module">
-          <h2 class="section-title">Specifications</h2>
-          <!--SPECIFICATIONS: remove fields that do not apply.-->
-          <dl class="specifications">
-            <div>
-              <dt>[Specification name]</dt>
-              <dd>[Value and units]</dd>
+    <main id="main" class="page-main project-main">
+      <div class="page-container">
+        <a class="back-link" href="../../projects/">← Back to Projects</a>
+        <section class="project-hero" aria-labelledby="project-title-heading">
+          <header class="project-hero-header">
+            <div class="project-meta-kicker">
+              <span class="meta-status-pill">Ready to Launch.</span>
             </div>
-            <div>
-              <dt>[Specification name]</dt>
-              <dd>[Value and units]</dd>
+            <h1 id="project-title-heading" class="project-title">Air Brakes</h1>
+            <p class="project-tagline">An active apogee-control system that adjusts air-brake deployment using flight-computer sensor data and a PID controller.</p>
+            <div class="project-submeta-bar">
+              <div class="project-tags" aria-label="Project classifications">
+                <span class="project-tag">Flight Controls</span>
+                <span class="project-tag">Avionics</span>
+              </div>
+              <div class="project-lead">Project Lead: <strong>Brian Payne</strong>
+              </div>
+            </div>
+          </header>
+          <div class="project-splash-frame">
+            <img class="project-splash-image" src="../../assets/images/bebop-02.jpg" alt="Rocket air-brake mechanism">
+            <div class="splash-caption-bar">
+              <span>[Project image caption]</span>
+            </div>
+          </div>
+        </section>
+        <section class="specifications-band" id="specifications" aria-labelledby="specs-heading">
+          <div class="spec-band-header">
+            <h2 id="specs-heading">Specifications</h2>
+          </div>
+          <!-- SPECIFICATION: duplicate one spec-item. Identify target vs measured and provide units. -->
+          <dl class="spec-grid">
+            <div class="spec-item">
+              <dt class="spec-label">[Specification name]</dt>
+              <dd class="spec-value">[Value and units]</dd>
+            </div>
+            <div class="spec-item">
+              <dt class="spec-label">[Specification name]</dt>
+              <dd class="spec-value">[Value and units]</dd>
             </div>
           </dl>
         </section>
-        <section class="module">
-          <h2 class="section-title">Project gallery</h2>
-          <div class="carousel" data-carousel tabindex="0" aria-label="Project photographs" aria-roledescription="carousel">
-            <div class="carousel-slides">
-              <!--GALLERY FIGURE: duplicate one figure to add a photo. Use a local path and descriptive alt.-->
-              <figure data-slide="">
-                <div class="media-placeholder aspect-video" role="img" aria-label="Project photograph placeholder">[Project photograph]</div>
-                <figcaption>[Photo caption]</figcaption>
-              </figure>
+        <section class="content-section" id="background" aria-labelledby="background-heading">
+          <div class="section-head">
+            <h2 class="section-title" id="background-heading">Background &amp; Rationale</h2>
+          </div>
+          <div class="prose-measure">
+            <p>[Project background]</p>
+          </div>
+        </section>
+        <section class="goals-section" id="goals" aria-labelledby="goals-heading">
+          <div class="section-head">
+            <h2 id="goals-heading" class="section-title">Key Mission Goals</h2>
+          </div>
+          <div class="goals-list">
+            <!-- GOAL: duplicate one goal-row and increment its number. -->
+            <div class="goal-row">
+              <div class="goal-number">01</div>
+              <div class="goal-text">[Project goal]</div>
             </div>
-            <div class="carousel-controls">
-              <button type="button" data-prev aria-label="Previous photograph">Previous</button>
-              <span data-position aria-live="polite"></span>
-              <button type="button" data-next aria-label="Next photograph">Next</button>
+            <div class="goal-row">
+              <div class="goal-number">02</div>
+              <div class="goal-text">[Project goal]</div>
             </div>
           </div>
         </section>
-        <p>
-          <a href="../../projects/">← All projects</a>
-        </p>
+        <section class="content-section" id="work" aria-labelledby="work-heading">
+          <div class="section-head">
+            <h2 class="section-title" id="work-heading">Progress &amp; Current Work</h2>
+          </div>
+          <div class="prose-measure">
+            <p>[Current work]</p>
+          </div>
+        </section>
+        <section class="timeline-section" id="timeline" aria-labelledby="timeline-heading">
+          <div class="section-head">
+            <h2 class="section-title section-title--gold" id="timeline-heading">Development Timeline</h2>
+          </div>
+          <div class="timeline-spine">
+            <!-- MILESTONE: duplicate one milestone-item. Set status to completed, ongoing, or planned only when confirmed. -->
+            <div class="milestone-item" data-milestone-status="planned">
+              <div class="milestone-marker" aria-hidden="true">
+                <svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
+              <div class="milestone-card">
+                <div class="milestone-header">
+                  <span class="milestone-date-text">[Date or TBD]</span>
+                  <span class="milestone-status-badge">Status to confirm</span>
+                </div>
+                <h3 class="milestone-title">[Milestone title]</h3>
+                <p class="milestone-summary">[Milestone summary]</p>
+                <details class="milestone-details">
+                  <summary>Milestone details</summary>
+                  <div class="milestone-details-body">[Additional milestone details]</div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="content-section" id="images" aria-labelledby="images-heading">
+          <div class="section-head">
+            <h2 class="section-title" id="images-heading">Images &amp; Captions</h2>
+          </div>
+          <figure class="media-module-frame">
+            <img src="../../assets/images/bebop-02.jpg" alt="Rocket air-brake mechanism" loading="lazy">
+            <figcaption class="media-caption">[Image caption]</figcaption>
+          </figure>
+        </section>
+        <section class="content-section" id="video" aria-labelledby="video-heading">
+          <div class="section-head">
+            <h2 class="section-title" id="video-heading">Video</h2>
+          </div>
+          <!-- VIDEO: replace this placeholder with a titled YouTube iframe or local video with controls. -->
+          <div class="media-placeholder" role="img" aria-label="Project video">[Project video]</div>
+          <p class="media-caption">[Video caption]</p>
+        </section>
+        <section class="content-section" id="data" aria-labelledby="data-heading" data-data-charts="">
+          <div class="section-head">
+            <h2 id="data-heading" class="section-title">Data &amp; Telemetry Curves</h2>
+          </div>
+          <div>
+            <p class="data-note" data-chart-note>Choose a published test recording to explore its measurements.</p>
+            <div class="chart-toolbar" data-controls hidden>
+              <label>Recording <select data-dataset aria-label="Test recording"></select>
+              </label>
+              <button type="button" data-mode="zoom" aria-pressed="true">Drag to zoom</button>
+              <button type="button" data-mode="pan" aria-pressed="false">Pan</button>
+              <button type="button" data-action="in">Zoom in</button>
+              <button type="button" data-action="out">Zoom out</button>
+              <button type="button" data-action="reset">Reset full recording</button>
+              <span data-window></span>
+            </div>
+          </div>
+          <div>
+            <p data-status role="status">Test data not yet published.</p>
+            <div data-plots></div>
+            <p>
+              <a data-download hidden download>Download source CSV</a>
+            </p>
+            <noscript>JavaScript is required for interactive plots.</noscript>
+          </div>
+          <!-- CHART CONFIGURATION: see GRAPHS.md. Use site-root-relative dataset paths WITHOUT a leading slash. Units must be confirmed. -->
+          <script type="application/json" data-chart-config="">
+{
+  "datasets": []
+}
+</script>
+        </section>
+        <section class="content-section" id="documentation" aria-labelledby="documentation-heading">
+          <div class="section-head">
+            <h2 class="section-title" id="documentation-heading">Documentation &amp; Publications</h2>
+          </div>
+          <p>[Add documentation links here]</p>
+        </section>
+        <section class="content-section" id="links" aria-labelledby="links-heading">
+          <div class="section-head">
+            <h2 class="section-title" id="links-heading">Links &amp; Repositories</h2>
+          </div>
+          <p>[Add confirmed external resource links here]</p>
+        </section>
+        <section class="content-section" id="gallery" aria-labelledby="gallery-heading">
+          <div class="section-head">
+            <h2 class="section-title" id="gallery-heading">Project Gallery</h2>
+          </div>
+          <div class="carousel-container" data-project-gallery tabindex="0" aria-label="Project photographs" aria-roledescription="carousel">
+            <!-- GALLERY FIGURE: duplicate one figure; use a local path and descriptive alt. -->
+            <figure class="carousel-slide-view" data-project-slide>
+              <img src="../../assets/images/bebop-01.jpg" alt="Air Brakes — project photograph" loading="lazy">
+              <figcaption class="carousel-caption">[Photo caption]</figcaption>
+            </figure>
+            <figure class="carousel-slide-view" data-project-slide hidden="hidden">
+              <img src="../../assets/images/bebop-02.jpg" alt="Air Brakes project photograph 1" loading="lazy">
+              <figcaption class="carousel-caption">[Photo caption]</figcaption>
+            </figure>
+            <div class="carousel-controls">
+              <button type="button" class="carousel-nav-btn" data-project-prev aria-label="Previous photograph">← Previous</button>
+              <span class="carousel-position-indicator" data-project-position aria-live="polite"></span>
+              <button type="button" class="carousel-nav-btn" data-project-next aria-label="Next photograph">Next →</button>
+            </div>
+          </div>
+        </section>
+        <div style="padding-top:48px;">
+          <a class="back-link" href="../../projects/">← All projects</a>
+        </div>
       </div>
     </main>
     <footer class="site-footer">
       <div class="footer-inner">
         <div>
-          <img src="../../assets/images/cpss_primary_logo_reversed.png" alt="CPSS" width="110">
+          <img src="../../assets/images/cpss-primary-logo-reversed.png" alt="CPSS" width="110">
           <h2>Cal Poly Space Systems</h2>
           <p>Design. Test. Launch. Recover.</p>
         </div>
@@ -105,7 +231,7 @@
           <a href="../../publications/">Publications</a>
           <a href="../../updates/">Updates</a>
           <a href="../../team/#contact">Contact</a>
-          <a href="../../support-us/">Support CPSS</a>
+          <a href="../../support-us/" data-sponsorship-link hidden>Support CPSS</a>
         </nav>
         <div class="footer-social">
           <a href="mailto:cpss@calpoly.edu">cpss@calpoly.edu</a>

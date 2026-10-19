@@ -1,20 +1,47 @@
-# Verification — v04
+# V08 verification
 
-Checked on 2026-10-06:
+Starting point: the supplied `cpss_static_website_v07 edited.zip`.
 
-- All 22 physical HTML pages have a main landmark, one main heading, local shared assets, and a topo background.
-- All 485 local HTML references resolve, including images, font preloads, document files, physical folder routes, and fragment destinations. CSS background/font references were also checked.
-- Header and footer structures and destinations were compared across all pages after resolving relative paths. They match, apart from current-page indicators.
-- Every active catalog project has a physical detail page, matching title, preview summary, and thumbnail path. There are ten active projects. Disabled NILE is not listed.
-- Archerfish's stale browser title and invalid checklist markup were repaired. Its six checklist items, goals, timeline, and technical values were retained.
-- The supplied PDF and presentation are connected to a real publication record and direct download links. Document files are organized under assets/documents.
-- Both JavaScript files pass Node syntax validation.
-- The shipped script initializes against DOM trees parsed from every page without exceptions.
-- Every actual project tag was tested against the active ten-project catalog. Additional tests cover tag renaming with special characters, alphabetical/date ordering, invalid dates last, and empty filtered results.
-- Tests cover mobile menu toggling, Escape/focus return, link-close, homepage header reveal, category controls, gallery wrap-around, keyboard/swipe navigation, one-slide disabled controls, and image enlargement.
-- The homepage displays the user's three featured projects; a configurable limit of two was also tested.
-- A background-video mock receives exactly one toggle handler; consecutive clicks play and pause. The duplicate handler was removed.
-- Form tests cover a correctly encoded mailto draft with Unicode, newlines, ampersands, and literal plus signs, as well as mocked submission success/failure. No external message was sent.
-- HTML, CSS, and JavaScript remain readable multiline files. The ZIP places website files at its root and contains no Git directory.
+## Performed for this revision
 
-Limit: no browser executable is available in this environment. Browser rendering, real mobile overflow/focus behavior, external video/album availability, browser PDF playback, and the final email-application launch still need an actual browser check. DOM tests verify behavior rather than pixel layout. Original supplied images/documents are preserved; their technical accuracy and remaining content placeholders are listed in EDITING_NOTES.md.
+- Node syntax checks passed for content.js, site.js, project.js and data-charts.js.
+- Checked 24 HTML files, 644 local file/fragment/style references, active CSS
+  assets, JSON dataset paths, catalog thumbnails and catalog page routes.
+- Verified the 20 roster names/roles against the approved list, five sections,
+  Noah's actual headshot, and three local group photographs. The four removed
+  survey members are absent from the public roster.
+- All 48 links to the sponsorship page have both `data-sponsorship-link` and
+  `hidden`. The page, destinations and original anchor code remain.
+- Structural comparison confirms the existing homepage and every project page
+  retain the edited v07 content/layout, apart from hidden sponsorship links
+  and corrected duplicate doctypes. Shared site.css is byte-identical.
+- Source comparison confirms project.js, data-charts.js, measurement CSVs,
+  CNAME and .nojekyll are unchanged. Headshot bytes are preserved after renaming.
+- The Spring 2026 article has a real physical folder route, period label,
+  linked local report PDF and working no-JavaScript listing link. Placeholder
+  articles are absent from the public catalog and remain as editing drafts.
+- A minimal DOM harness initializes shared/project behavior on all 24 pages.
+  It exercises mobile menus/Escape, shared and project carousel next/previous/
+  keyboard controls, the Team swipe control, all project-tag filters, name and
+  date sorting, three homepage features/scroll header, Updates categories,
+  publication records, and the contact form's encodeURIComponent mailto URL.
+- Catalog project/publication entries, thumbnails and homepage selections are
+  preserved. Project archival has not been implemented.
+
+## Practical limits
+
+No browser rendering engine is installed in this environment. DOM tests do
+not establish visual rendering, real email-client handoff, native PDF/video
+playback or native Plotly interaction. Preview these in a browser before your
+normal deployment. Plotly still uses the existing CDN configuration; see
+VENDOR.md. Its code/data were preserved rather than redeveloped in v08.
+
+Only Noah's supplied portrait matches the approved roster. Nineteen profiles
+have clearly marked photo slots. Kevin/Shiv have no invented role; Evan's
+surname and missing person contact details remain unspecified.
+
+## Packaging
+
+The final ZIP is checked for integrity, root index.html/assets/CNAME/.nojekyll,
+valid file paths, and exclusion of Git metadata, development scripts, private
+survey CSVs and installation dependencies. Each asset is below 100 MB.
