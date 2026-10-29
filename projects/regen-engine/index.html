@@ -4,14 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Regeneratively Cooled Engine | CPSS</title>
-    <meta name="description" content="Research and preliminary design of regeneratively cooled engines to support future liquid-propellant vertical takeoff and landing development.">
-    <link rel="stylesheet" href="../../assets/css/site.css">
-    <script defer src="../../assets/data/content.js"></script>
-    <script defer src="../../assets/js/site.js"></script>
+    <meta name="description" content="A 300 lbf nitrous oxide–ethanol engine with 10 helical regenerative cooling channels, designed to characterize small-scale engine thermal performance and validate a thermal model for future higher-performance engines.">
+    <link rel="stylesheet" href="../../assets/css/site.css?v=10">
+    <script defer src="../../assets/data/content.js?v=10"></script>
+    <script defer src="../../assets/js/site.js?v=10"></script>
     <link rel="preload" href="../../assets/fonts/SpaceGrotesk-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../assets/css/project.css">
+    <link rel="stylesheet" href="../../assets/css/project.css?v=10">
     <script src="../../assets/js/project.js" defer></script>
+    <!-- GRAPH LOADER DISABLED: remove the comment markers and unhide the data section to restore.
     <script src="../../assets/js/data-charts.js" defer></script>
+    -->
+    <link rel="preload" href="../../assets/fonts/Munistic.woff" as="font" type="font/woff" crossorigin="anonymous">
   </head>
   <body data-base="../../" style="--topo-image: url('../../assets/images/topo-sharp-02.svg')" class="project-page">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -27,7 +30,7 @@
           <a href="../../projects/" aria-current="page">Projects</a>
           <a href="../../team/">The Team</a>
           <a href="../../updates/">Updates</a>
-          <a href="../../support-us/" data-sponsorship-link hidden>Sponsors</a>
+          <a href="../../support-us/" data-sponsorship-link="" hidden="">Sponsors</a>
         </nav>
       </div>
     </header>
@@ -37,39 +40,79 @@
         <section class="project-hero" aria-labelledby="project-title-heading">
           <header class="project-hero-header">
             <div class="project-meta-kicker">
-              <span class="meta-status-pill">Amid Design and Analysis</span>
+              <span class="meta-status-pill">In Manufacturing</span>
             </div>
             <h1 id="project-title-heading" class="project-title">Regeneratively Cooled Engine</h1>
-            <p class="project-tagline">Research and preliminary design of regeneratively cooled engines to support future liquid-propellant vertical takeoff and landing development.</p>
+            <p class="project-tagline">A 300 lbf nitrous oxide–ethanol engine with 10 helical regenerative cooling channels, designed to characterize small-scale engine thermal performance and validate a thermal model for future higher-performance engines.</p>
             <div class="project-submeta-bar">
               <div class="project-tags" aria-label="Project classifications">
                 <span class="project-tag">Liquid Propulsion</span>
                 <span class="project-tag">Research &amp; Development</span>
               </div>
-              <div class="project-lead">Project Lead: <strong>Sloan Robbins, Ellen Poulsen</strong>
+              <div class="project-lead">Project Lead: <strong>Sloan Robbins</strong> · Co-lead: <strong>Ellen Poulsen</strong>
               </div>
             </div>
           </header>
           <div class="project-splash-frame">
-            <div class="media-placeholder" role="img" aria-label="Project hero image">[Project hero image]</div>
+            <img class="project-splash-image"
+                 src="../../assets/images/regen-thumbnail.png"
+                 alt="CAD cross-section of the regeneratively cooled engine and its cooling channels">
             <div class="splash-caption-bar">
-              <span>[Project image caption]</span>
+              <span>Regeneratively cooled engine — CAD cross-section</span>
             </div>
           </div>
         </section>
         <section class="specifications-band" id="specifications" aria-labelledby="specs-heading">
           <div class="spec-band-header">
-            <h2 id="specs-heading">Specifications</h2>
+            <h2 id="specs-heading">Design Specifications</h2>
           </div>
-          <!-- SPECIFICATION: duplicate one spec-item. Identify target vs measured and provide units. -->
+          <!-- Supplied design/analysis values, not measured hotfire results. -->
+          <p class="data-note">Submitted design and analysis values; measured test results have not been reported.</p>
+          <!-- SPECIFICATION: duplicate one spec-item. Preserve units and identify targets vs measured results. -->
           <dl class="spec-grid">
             <div class="spec-item">
-              <dt class="spec-label">[Specification name]</dt>
-              <dd class="spec-value">[Value and units]</dd>
+              <dt class="spec-label">Design thrust</dt>
+              <dd class="spec-value">300 lbf</dd>
             </div>
             <div class="spec-item">
-              <dt class="spec-label">[Specification name]</dt>
-              <dd class="spec-value">[Value and units]</dd>
+              <dt class="spec-label">Propellants</dt>
+              <dd class="spec-value">N2O / Ethanol</dd>
+            </div>
+            <div class="spec-item">
+              <dt class="spec-label">Oxidizer/Fuel ratio</dt>
+              <dd class="spec-value">2.0</dd>
+            </div>
+            <div class="spec-item">
+              <dt class="spec-label">Design chamber pressure</dt>
+              <dd class="spec-value">200 psi</dd>
+            </div>
+            <div class="spec-item">
+              <dt class="spec-label">Fuel Mass Flow Rate</dt>
+              <dd class="spec-value">0.2875 kg/s</dd>
+            </div>
+            <div class="spec-item">
+              <dt class="spec-label">Design specific impulse</dt>
+              <dd class="spec-value">158 s</dd>
+            </div>
+            <div class="spec-item">
+              <dt class="spec-label">Chamber inner diameter</dt>
+              <dd class="spec-value">3.5 in</dd>
+            </div>
+            <div class="spec-item">
+              <dt class="spec-label">Chamber length</dt>
+              <dd class="spec-value">8 in</dd>
+            </div>
+            <div class="spec-item">
+              <dt class="spec-label">Helical cooling channels</dt>
+              <dd class="spec-value">10 channels</dd>
+            </div>
+            <div class="spec-item">
+              <dt class="spec-label">Peak hot-wall temperature</dt>
+              <dd class="spec-value">524 K</dd>
+            </div>
+            <div class="spec-item">
+              <dt class="spec-label">Chamber material</dt>
+              <dd class="spec-value">AlSi10Mg</dd>
             </div>
           </dl>
         </section>
@@ -78,7 +121,8 @@
             <h2 class="section-title" id="background-heading">Background &amp; Rationale</h2>
           </div>
           <div class="prose-measure">
-            <p>[Project background]</p>
+            <p>The project aims to deliver CPSS’s first successful regeneratively cooled engine. By circulating coolant through 10 helical channels, the team is investigating the thermal performance of small-scale engines and validating its thermal model.</p>
+            <p>This work is intended to support higher-performance engines, reduce component consumption, and expand the club’s research capabilities. The resulting material and performance data will provide a foundation for future engine development.</p>
           </div>
         </section>
         <section class="goals-section" id="goals" aria-labelledby="goals-heading">
@@ -89,11 +133,19 @@
             <!-- GOAL: duplicate one goal-row and increment its number. -->
             <div class="goal-row">
               <div class="goal-number">01</div>
-              <div class="goal-text">[Project goal]</div>
+              <div class="goal-text">Sustain regenerative cooling throughout a hotfire, working toward the team’s “indefinite” cooling objective.</div>
             </div>
             <div class="goal-row">
               <div class="goal-number">02</div>
-              <div class="goal-text">[Project goal]</div>
+              <div class="goal-text">Validate thermal models against test data.</div>
+            </div>
+            <div class="goal-row">
+              <div class="goal-number">03</div>
+              <div class="goal-text">Collect material data and characterize engine performance.</div>
+            </div>
+            <div class="goal-row">
+              <div class="goal-number">04</div>
+              <div class="goal-text">Improve CPSS’s testing cadence.</div>
             </div>
           </div>
         </section>
@@ -102,7 +154,9 @@
             <h2 class="section-title" id="work-heading">Progress &amp; Current Work</h2>
           </div>
           <div class="prose-measure">
-            <p>[Current work]</p>
+            <p><strong>Completed:</strong> Engine and injector design, thermal modeling, stress calculations, integration planning, test planning, and instrumentation for data collection.</p>
+            <p><strong>Current work:</strong> Manufacturing and design refinements.</p>
+            <p><strong>Next:</strong> Hydrostatic tests, cold-flow tests, hotfires, and further characterization. Testing dates are still to be set.</p>
           </div>
         </section>
         <section class="timeline-section" id="timeline" aria-labelledby="timeline-heading">
@@ -110,46 +164,87 @@
             <h2 class="section-title section-title--gold" id="timeline-heading">Development Timeline</h2>
           </div>
           <div class="timeline-spine">
-            <!-- MILESTONE: duplicate one milestone-item. Set status to completed, ongoing, or planned only when confirmed. -->
-            <div class="milestone-item" data-milestone-status="planned">
+            <!-- MILESTONE: duplicate one milestone-item; use completed, ongoing, or planned. -->
+            <div class="milestone-item" data-milestone-status="completed">
               <div class="milestone-marker" aria-hidden="true">
-                <svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="milestone-card">
+                <div class="milestone-header">
+                  <span class="milestone-date-text">October 17</span>
+                  <span class="milestone-status-badge">Completed</span>
+                </div>
+                <h3 class="milestone-title">Preliminary Design Review</h3>
+                <p class="milestone-summary">The survey lists the PDR on October 17.</p>
+              </div>
+            </div>
+            <div class="milestone-item" data-milestone-status="completed">
+              <div class="milestone-marker" aria-hidden="true">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="milestone-card">
+                <div class="milestone-header">
+                  <span class="milestone-date-text">Design phase</span>
+                  <span class="milestone-status-badge">Completed</span>
+                </div>
+                <h3 class="milestone-title">Design and analysis package</h3>
+                <p class="milestone-summary">Engine and injector design, thermal model, stress calculations, integration plan, test plan, and instrumentation are complete.</p>
+              </div>
+            </div>
+            <div class="milestone-item" data-milestone-status="ongoing">
+              <div class="milestone-marker" aria-hidden="true">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                   <circle cx="12" cy="12" r="3"></circle>
                 </svg>
               </div>
               <div class="milestone-card">
                 <div class="milestone-header">
-                  <span class="milestone-date-text">[Date or TBD]</span>
-                  <span class="milestone-status-badge">Status to confirm</span>
+                  <span class="milestone-date-text">Current work</span>
+                  <span class="milestone-status-badge">In progress</span>
                 </div>
-                <h3 class="milestone-title">[Milestone title]</h3>
-                <p class="milestone-summary">[Milestone summary]</p>
-                <details class="milestone-details">
-                  <summary>Milestone details</summary>
-                  <div class="milestone-details-body">[Additional milestone details]</div>
-                </details>
+                <h3 class="milestone-title">Manufacturing and refinements</h3>
+                <p class="milestone-summary">The engine is in manufacturing while the team continues refinements.</p>
+              </div>
+            </div>
+            <div class="milestone-item" data-milestone-status="planned">
+              <div class="milestone-marker" aria-hidden="true">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
+              <div class="milestone-card">
+                <div class="milestone-header">
+                  <span class="milestone-date-text">Dates TBD</span>
+                  <span class="milestone-status-badge">Planned</span>
+                </div>
+                <h3 class="milestone-title">Verification and hotfire testing</h3>
+                <p class="milestone-summary">Hydrostatic, cold-flow, and hotfire testing will characterize the engine and support thermal-model validation.</p>
               </div>
             </div>
           </div>
         </section>
-        <section class="content-section" id="images" aria-labelledby="images-heading">
+        <section class="content-section" id="images" aria-labelledby="images-heading" hidden="">
           <div class="section-head">
             <h2 class="section-title" id="images-heading">Images &amp; Captions</h2>
           </div>
           <figure class="media-module-frame">
             <div class="media-placeholder" role="img" aria-label="Project photograph">[Project photograph]</div>
-            <figcaption class="media-caption">[Image caption]</figcaption>
+            <figcaption class="media-caption" hidden="">[Image caption]</figcaption>
           </figure>
         </section>
-        <section class="content-section" id="video" aria-labelledby="video-heading">
+        <section class="content-section" id="video" aria-labelledby="video-heading" hidden="">
           <div class="section-head">
             <h2 class="section-title" id="video-heading">Video</h2>
           </div>
           <!-- VIDEO: replace this placeholder with a titled YouTube iframe or local video with controls. -->
           <div class="media-placeholder" role="img" aria-label="Project video">[Project video]</div>
-          <p class="media-caption">[Video caption]</p>
+          <p class="media-caption" hidden="">[Video caption]</p>
         </section>
-        <section class="content-section" id="data" aria-labelledby="data-heading" data-data-charts="">
+        <section class="content-section" id="data" aria-labelledby="data-heading" data-data-charts="" hidden="">
           <div class="section-head">
             <h2 id="data-heading" class="section-title">Data &amp; Telemetry Curves</h2>
           </div>
@@ -185,9 +280,26 @@
           <div class="section-head">
             <h2 class="section-title" id="documentation-heading">Documentation &amp; Publications</h2>
           </div>
-          <p>[Add documentation links here]</p>
+          <h3>Regenerative Engine Preliminary Design Review</h3>
+          <object class="pdf-viewer" data="../../assets/documents/Regenerative_Engine_PDR_CPSS_Sloan%20Robbins.pdf"
+                  type="application/pdf" aria-label="Regenerative engine preliminary design review PDF">
+            <p>Your browser cannot display this PDF here.
+              <a href="../../assets/documents/Regenerative_Engine_PDR_CPSS_Sloan%20Robbins.pdf" target="_blank" rel="noopener noreferrer">Open the PDR PDF</a>.
+            </p>
+          </object>
+          <!-- Keep these links outside the preview so they also work on mobile. -->
+          <p>
+            <a class="document-btn-link" href="../../assets/documents/Regenerative_Engine_PDR_CPSS_Sloan%20Robbins.pdf"
+               target="_blank" rel="noopener noreferrer">Open PDF in a new tab ↗</a>
+          </p>
+          <p>
+            <a class="document-btn-link" href="../../assets/documents/Regenerative_Engine_PDR_CPSS_Sloan%20Robbins.pdf" download>Download PDF</a>
+          </p>
+          <p>
+            <a class="document-btn-link" href="../../assets/documents/Regenerative_Engine_PDR_CPSS_Sloan%20Robbins.pptx" download>Download PowerPoint (.pptx)</a>
+          </p>
         </section>
-        <section class="content-section" id="links" aria-labelledby="links-heading">
+        <section class="content-section" id="links" aria-labelledby="links-heading" hidden="">
           <div class="section-head">
             <h2 class="section-title" id="links-heading">Links &amp; Repositories</h2>
           </div>
@@ -197,20 +309,40 @@
           <div class="section-head">
             <h2 class="section-title" id="gallery-heading">Project Gallery</h2>
           </div>
-          <div class="carousel-container" data-project-gallery tabindex="0" aria-label="Project photographs" aria-roledescription="carousel">
+          <div class="carousel-container" data-project-gallery tabindex="0"
+               aria-label="Regen engine CAD images" aria-roledescription="carousel">
             <!-- GALLERY FIGURE: duplicate one figure; use a local path and descriptive alt. -->
             <figure class="carousel-slide-view" data-project-slide>
-              <div class="media-placeholder" role="img" aria-label="Project photograph">[Project photograph]</div>
-              <figcaption class="carousel-caption">[Photo caption]</figcaption>
+              <img src="../../assets/images/regen-crossSection1.png"
+                   alt="Regen engine cross-section showing helical cooling channels" loading="lazy">
+              <figcaption class="carousel-caption">Helical cooling channels — CAD cross-section</figcaption>
+            </figure>
+            <figure class="carousel-slide-view" data-project-slide hidden>
+              <img src="../../assets/images/regen-crossSection2.png"
+                   alt="Regen engine chamber and nozzle cross-section" loading="lazy">
+              <figcaption class="carousel-caption">Chamber and nozzle — CAD cross-section</figcaption>
+            </figure>
+            <figure class="carousel-slide-view" data-project-slide hidden>
+              <img src="../../assets/images/regen-crossSection.png"
+                   alt="Exploded CAD cross-section of the Regen engine assembly" loading="lazy">
+              <figcaption class="carousel-caption">Engine assembly — exploded CAD cross-section</figcaption>
+            </figure>
+            <figure class="carousel-slide-view" data-project-slide hidden>
+              <img src="../../assets/images/regen-explodedView.png"
+                   alt="Exploded CAD view of the Regen engine" loading="lazy">
+              <figcaption class="carousel-caption">Engine assembly — exploded CAD view</figcaption>
             </figure>
             <div class="carousel-controls">
-              <button type="button" class="carousel-nav-btn" data-project-prev aria-label="Previous photograph">← Previous</button>
-              <span class="carousel-position-indicator" data-project-position aria-live="polite"></span>
-              <button type="button" class="carousel-nav-btn" data-project-next aria-label="Next photograph">Next →</button>
+              <button type="button" class="carousel-nav-btn"
+                      data-project-prev aria-label="Previous image">← Previous</button>
+              <span class="carousel-position-indicator"
+                    data-project-position aria-live="polite"></span>
+              <button type="button" class="carousel-nav-btn"
+                      data-project-next aria-label="Next image">Next →</button>
             </div>
           </div>
         </section>
-        <div style="padding-top:48px;">
+          <div style="padding-top:48px;">
           <a class="back-link" href="../../projects/">← All projects</a>
         </div>
       </div>
@@ -227,7 +359,7 @@
           <a href="../../publications/">Publications</a>
           <a href="../../updates/">Updates</a>
           <a href="../../team/#contact">Contact</a>
-          <a href="../../support-us/" data-sponsorship-link hidden>Support CPSS</a>
+          <a href="../../support-us/" data-sponsorship-link="" hidden="">Support CPSS</a>
         </nav>
         <div class="footer-social">
           <a href="mailto:cpss@calpoly.edu">cpss@calpoly.edu</a>

@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TOM Flight Computer | CPSS</title>
     <meta name="description" content="An adaptable flight computer combining onboard sensors, data logging, and LoRa telemetry around a Raspberry Pi Compute Module 5.">
-    <link rel="stylesheet" href="../../assets/css/site.css">
-    <script defer src="../../assets/data/content.js"></script>
-    <script defer src="../../assets/js/site.js"></script>
+    <link rel="stylesheet" href="../../assets/css/site.css?v=10">
+    <script defer src="../../assets/data/content.js?v=10"></script>
+    <script defer src="../../assets/js/site.js?v=10"></script>
     <link rel="preload" href="../../assets/fonts/SpaceGrotesk-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../assets/css/project.css">
+    <link rel="stylesheet" href="../../assets/css/project.css?v=10">
     <script src="../../assets/js/project.js" defer></script>
+    <!-- GRAPH LOADER DISABLED: remove the comment markers and unhide the data section to restore.
     <script src="../../assets/js/data-charts.js" defer></script>
+    -->
+    <link rel="preload" href="../../assets/fonts/Munistic.woff" as="font" type="font/woff" crossorigin="anonymous">
   </head>
   <body data-base="../../" style="--topo-image: url('../../assets/images/topo-sharp-02.svg')" class="project-page">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -27,7 +30,7 @@
           <a href="../../projects/" aria-current="page">Projects</a>
           <a href="../../team/">The Team</a>
           <a href="../../updates/">Updates</a>
-          <a href="../../support-us/" data-sponsorship-link hidden>Sponsors</a>
+          <a href="../../support-us/" data-sponsorship-link="" hidden="">Sponsors</a>
         </nav>
       </div>
     </header>
@@ -37,7 +40,7 @@
         <section class="project-hero" aria-labelledby="project-title-heading">
           <header class="project-hero-header">
             <div class="project-meta-kicker">
-              <span class="meta-status-pill">[Current status]</span>
+              <span class="meta-status-pill" hidden="">[Current status]</span>
             </div>
             <h1 id="project-title-heading" class="project-title">TOM Flight Computer</h1>
             <p class="project-tagline">An adaptable flight computer combining onboard sensors, data logging, and LoRa telemetry around a Raspberry Pi Compute Module 5.</p>
@@ -46,18 +49,18 @@
                 <span class="project-tag">Avionics</span>
                 <span class="project-tag">Flight Controls</span>
               </div>
-              <div class="project-lead">Project Lead: <strong>[Project lead]</strong>
+              <div class="project-lead" hidden="">Project Lead: <strong>[Project lead]</strong>
               </div>
             </div>
           </header>
           <div class="project-splash-frame">
             <img class="project-splash-image" src="../../assets/images/tom-flight-computer.jpg" alt="TOM flight computer board">
-            <div class="splash-caption-bar">
+            <div class="splash-caption-bar" hidden="">
               <span>[Project image caption]</span>
             </div>
           </div>
         </section>
-        <section class="specifications-band" id="specifications" aria-labelledby="specs-heading">
+        <section class="specifications-band" id="specifications" aria-labelledby="specs-heading" hidden="">
           <div class="spec-band-header">
             <h2 id="specs-heading">Specifications</h2>
           </div>
@@ -73,7 +76,7 @@
             </div>
           </dl>
         </section>
-        <section class="content-section" id="background" aria-labelledby="background-heading">
+        <section class="content-section" id="background" aria-labelledby="background-heading" hidden="">
           <div class="section-head">
             <h2 class="section-title" id="background-heading">Background &amp; Rationale</h2>
           </div>
@@ -81,7 +84,7 @@
             <p>[Project background]</p>
           </div>
         </section>
-        <section class="goals-section" id="goals" aria-labelledby="goals-heading">
+        <section class="goals-section" id="goals" aria-labelledby="goals-heading" hidden="">
           <div class="section-head">
             <h2 id="goals-heading" class="section-title">Key Mission Goals</h2>
           </div>
@@ -97,7 +100,7 @@
             </div>
           </div>
         </section>
-        <section class="content-section" id="work" aria-labelledby="work-heading">
+        <section class="content-section" id="work" aria-labelledby="work-heading" hidden="">
           <div class="section-head">
             <h2 class="section-title" id="work-heading">Progress &amp; Current Work</h2>
           </div>
@@ -105,7 +108,7 @@
             <p>[Current work]</p>
           </div>
         </section>
-        <section class="timeline-section" id="timeline" aria-labelledby="timeline-heading">
+        <section class="timeline-section" id="timeline" aria-labelledby="timeline-heading" hidden="">
           <div class="section-head">
             <h2 class="section-title section-title--gold" id="timeline-heading">Development Timeline</h2>
           </div>
@@ -113,7 +116,7 @@
             <!-- MILESTONE: duplicate one milestone-item. Set status to completed, ongoing, or planned only when confirmed. -->
             <div class="milestone-item" data-milestone-status="planned">
               <div class="milestone-marker" aria-hidden="true">
-                <svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
                   <circle cx="12" cy="12" r="3"></circle>
                 </svg>
               </div>
@@ -124,7 +127,7 @@
                 </div>
                 <h3 class="milestone-title">[Milestone title]</h3>
                 <p class="milestone-summary">[Milestone summary]</p>
-                <details class="milestone-details">
+                <details class="milestone-details" hidden="">
                   <summary>Milestone details</summary>
                   <div class="milestone-details-body">[Additional milestone details]</div>
                 </details>
@@ -138,18 +141,18 @@
           </div>
           <figure class="media-module-frame">
             <img src="../../assets/images/tom-flight-computer.jpg" alt="TOM flight computer board" loading="lazy">
-            <figcaption class="media-caption">[Image caption]</figcaption>
+            <figcaption class="media-caption" hidden="">[Image caption]</figcaption>
           </figure>
         </section>
-        <section class="content-section" id="video" aria-labelledby="video-heading">
+        <section class="content-section" id="video" aria-labelledby="video-heading" hidden="">
           <div class="section-head">
             <h2 class="section-title" id="video-heading">Video</h2>
           </div>
           <!-- VIDEO: replace this placeholder with a titled YouTube iframe or local video with controls. -->
           <div class="media-placeholder" role="img" aria-label="Project video">[Project video]</div>
-          <p class="media-caption">[Video caption]</p>
+          <p class="media-caption" hidden="">[Video caption]</p>
         </section>
-        <section class="content-section" id="data" aria-labelledby="data-heading" data-data-charts="">
+        <section class="content-section" id="data" aria-labelledby="data-heading" data-data-charts="" hidden="">
           <div class="section-head">
             <h2 id="data-heading" class="section-title">Data &amp; Telemetry Curves</h2>
           </div>
@@ -181,13 +184,13 @@
 }
 </script>
         </section>
-        <section class="content-section" id="documentation" aria-labelledby="documentation-heading">
+        <section class="content-section" id="documentation" aria-labelledby="documentation-heading" hidden="">
           <div class="section-head">
             <h2 class="section-title" id="documentation-heading">Documentation &amp; Publications</h2>
           </div>
           <p>[Add documentation links here]</p>
         </section>
-        <section class="content-section" id="links" aria-labelledby="links-heading">
+        <section class="content-section" id="links" aria-labelledby="links-heading" hidden="">
           <div class="section-head">
             <h2 class="section-title" id="links-heading">Links &amp; Repositories</h2>
           </div>
@@ -201,7 +204,7 @@
             <!-- GALLERY FIGURE: duplicate one figure; use a local path and descriptive alt. -->
             <figure class="carousel-slide-view" data-project-slide>
               <img src="../../assets/images/tom-flight-computer.jpg" alt="TOM Flight Computer project photograph 1" loading="lazy">
-              <figcaption class="carousel-caption">[Photo caption]</figcaption>
+              <figcaption class="carousel-caption" hidden="">[Photo caption]</figcaption>
             </figure>
             <div class="carousel-controls">
               <button type="button" class="carousel-nav-btn" data-project-prev aria-label="Previous photograph">← Previous</button>
@@ -227,7 +230,7 @@
           <a href="../../publications/">Publications</a>
           <a href="../../updates/">Updates</a>
           <a href="../../team/#contact">Contact</a>
-          <a href="../../support-us/" data-sponsorship-link hidden>Support CPSS</a>
+          <a href="../../support-us/" data-sponsorship-link="" hidden="">Support CPSS</a>
         </nav>
         <div class="footer-social">
           <a href="mailto:cpss@calpoly.edu">cpss@calpoly.edu</a>

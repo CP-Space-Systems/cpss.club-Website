@@ -25,3 +25,11 @@
 .team-member-initials {
   font-size: 2rem;
 }
+
+/* v09: make the section eyebrow useful on tablets and smaller screens. */
+.team-eyebrow {
+  font-family: var(--font-body);
+  font-size: clamp(17px, 1.5vw, 20px);
+  line-height: 1.5;
+  color: var(--brand-green);
+}

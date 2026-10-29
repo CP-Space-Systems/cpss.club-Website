@@ -54,3 +54,31 @@ unchanged. Only Noah is part of the approved visible roster.
 
 The supplied quarterly report is copied without changing its bytes to
 `assets/documents/cpss-spring-2026-quarterly-report.pdf`.
+
+## V09 supplied assets
+
+| Uploaded name | Website path |
+|---|---|
+| Munistic (1).ttf | assets/fonts/Munistic.ttf |
+| Derived WOFF container | assets/fonts/Munistic.woff |
+| sille image 1.png | assets/images/sille-engine-cutaway.png |
+| sille image 2.png | assets/images/sille-isentropic-flow-lecture.png |
+| TVC_image1.jpg | assets/images/tvc-gimbal-assembly.jpg |
+| TVC PDR.pptx | assets/documents/tvc-preliminary-design-review.pptx |
+| TVC Documentation.docx | assets/documents/tvc-calculations-and-documentation.docx |
+
+Source image/document/TTF bytes are preserved. WOFF uses the same glyph map and
+font family as the supplied TTF. The private survey CSV is not shipped.
+
+## V10 asset paths
+
+Original image bytes are preserved.
+
+| Uploaded path | Current path |
+|---|---|
+| assets/images/Pollux_cad.png | assets/images/pollux-cad.png |
+| assets/images/Pollux_cross_section.png | assets/images/pollux-cross-section.png |
+| assets/images/CPSS_NileTeam.jpg | assets/images/nile-team.jpg |
+| assets/images/tvc-CAD.png | assets/images/tvc-integration-cad.png |
+| assets/images/team/metzli-singha.jpg | assets/images/team/metztli-singha.jpg |
+| assets/images/team/Shiva-pulmamidi.jpg | assets/images/team/shiva-pulmamidi.jpg |

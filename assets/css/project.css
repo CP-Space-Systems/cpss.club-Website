@@ -311,7 +311,7 @@
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.6s ease;
 }
 
-.goal-row:nth-child(2) {
+.goal-row:nth-child(even) {
   border-left-color: var(--brand-gold);
 }
 
@@ -327,7 +327,7 @@
   letter-spacing: -0.03em;
 }
 
-.goal-row:nth-child(2) .goal-number {
+.goal-row:nth-child(even) .goal-number {
   color: var(--gold-on-white);
 }
 

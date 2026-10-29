@@ -1,3 +1,15 @@
+# V10 editing notes
+
+The current revision is documented in V10_EDITING.md and POLLUX_SOURCES.md.
+The earlier notes below are retained as history and may refer to old engine
+routes/names. The live Castor page is now projects/castor/index.html.
+
+# V09 editing notes
+
+Current revision instructions are in V09_EDITING.md. Source conflicts and
+unconfirmed TVC milestones are recorded in CONTENT_NOTES_V09.md. Graphs are
+intentionally hidden. The earlier notes below are retained for project history.
+
 # V08 notes
 
 The starting point is the user's edited v07 ZIP. The current Team roster,

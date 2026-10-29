@@ -87,7 +87,8 @@
     if (!compact) {
       const tags = make('div', undefined, 'project-tags');
       (project.tags || []).forEach((tag) => tags.append(make('span', tag)));
-      copy.append(tags, make('p', `Lead: ${project.lead || '[Project lead]'}`, 'project-meta'));
+      copy.append(tags);
+      if (project.lead) copy.append(make('p', `Lead: ${project.lead}`, 'project-meta'));
     }
     copy.append(link('View project →', `projects/${project.slug}/`));
     article.append(imageLink, copy);

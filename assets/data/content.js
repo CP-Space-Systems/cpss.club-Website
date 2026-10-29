@@ -16,21 +16,22 @@ window.CPSS_CONTENT = {
       "thumbnailAlt": "Archerfish liquid rocket",
       "featured": true
     },
-    // {
-    //   "slug": "air-brakes",
-    //   "title": "Air Brakes",
-    //   "status": "Ready to Launch.",
-    //   "tags": [
-    //     "Flight Controls",
-    //     "Avionics"
-    //   ],
-    //   "summary": "An active apogee-control system that adjusts air-brake deployment using flight-computer sensor data and a PID controller.",
-    //   "lead": "Brian Payne",
-    //   "date": "2024",
-    //   "thumbnail": "assets/images/bebop-02.jpg",
-    //   "thumbnailAlt": "Rocket air-brake mechanism",
-    //   "featured": false
-    // },
+    {
+      "slug": "air-brakes",
+      "title": "Bebop",
+      "status": "Ready to Launch.",
+      "tags": [
+        "Flight Vehicles",
+        "Flight Controls",
+        "Avionics"
+      ],
+      "summary": "Bebop is a launch vehicle with an active air-brake subsystem that controls apogee using flight-computer sensor data and a PID controller.",
+      "lead": "Brian Payne",
+      "date": "2024",
+      "thumbnail": "assets/images/bebop-02.jpg",
+      "thumbnailAlt": "Bebop air-brake mechanism",
+      "featured": false
+    },
     {
       "slug": "flyback-boosters",
       "title": "Recoverable Booster Program",
@@ -46,81 +47,96 @@ window.CPSS_CONTENT = {
       "thumbnailAlt": "Booster team loading the prototype vehicle onto a launch rail",
       "featured": true
     },
-    // {
-    //   "slug": "regen-engine",
-    //   "title": "Regeneratively Cooled Engine",
-    //   "status": "Amid Design and Analysis",
-    //   "tags": [
-    //     "Liquid Propulsion",
-    //     "Research & Development"
-    //   ],
-    //   "summary": "Research and preliminary design of regeneratively cooled engines to support future liquid-propellant vertical takeoff and landing development.",
-    //   "lead": "Sloan Robbins, Ellen Poulsen",
-    //   "date": "2026",
-    //   "thumbnail": "",
-    //   "thumbnailAlt": "Regeneratively cooled engine project",
-    //   "featured": false
-    // },
-    // {
-    //   "slug": "tvc",
-    //   "title": "Thrust Vector Control",
-    //   "status": "[Current status]",
-    //   "tags": [
-    //     "Flight Controls",
-    //     "Research & Development"
-    //   ],
-    //   "summary": "Research into thrust vector control as part of CPSS development toward a liquid-propellant vertical takeoff and landing vehicle.",
-    //   "lead": "Gustavo Chavez",
-    //   "date": "2026",
-    //   "thumbnail": "",
-    //   "thumbnailAlt": "Thrust vector control project",
-    //   "featured": false
-    // },
-    // {
-    //   "slug": "throttling",
-    //   "title": "Engine Throttling",
-    //   "status": "Prototype development",
-    //   "tags": [
-    //     "Liquid Propulsion",
-    //     "Research & Development"
-    //   ],
-    //   "summary": "To throttle rocket thrust between 60-100% to control a flight vehicle for the HOP challenge.",
-    //   "lead": "Rob Saunders and Gus Chavez",
-    //   "date": "2026-10-10",
-    //   "thumbnail": "",
-    //   "thumbnailAlt": "Engine throttling project",
-    //   "featured": false
-    // },
     {
-      "slug": "ablative-engine-successor",
-      "title": "Ablative Engine",
+      "slug": "regen-engine",
+      "title": "Regeneratively Cooled Engine",
+      "status": "In Manufacturing",
+      "tags": [
+        "Liquid Propulsion",
+        "Research & Development"
+      ],
+      "summary": "A 300 lbf nitrous oxide–ethanol engine with 10 helical regenerative cooling channels, designed to characterize small-scale engine thermal performance and validate a thermal model for future higher-performance engines.",
+      "lead": "Sloan Robbins, Ellen Poulsen",
+      "date": "2026",
+      "thumbnail": "assets/images/regen-thumbnail.png",
+      "thumbnailAlt": "Regeneratively cooled engine project",
+      "featured": false
+    },
+    {
+      "slug": "tvc",
+      "title": "Thrust Vector Control",
+      "status": "CDR preparation and component manufacturing",
+      "tags": [
+        "Flight Controls",
+        "Research & Development"
+      ],
+      "summary": "Developing a linear-actuator gimbal for the 300 lbf engine Pollux in preparation to control a lander vehicle.",
+      "lead": "Gustavo Chavez",
+      "date": "2026-10-19",
+      "thumbnail": "assets/images/tvc-integration-cad.png",
+      "thumbnailAlt": "CAD assembly showing TVC integration with the NILE test stand",
+      "featured": false
+    },
+    {
+      "slug": "throttling",
+      "title": "Engine Throttling",
+      "status": "Prototype development",
+      "tags": [
+        "Liquid Propulsion",
+        "Research & Development"
+      ],
+      "summary": "Developing propellant-flow control to throttle a 300 lbf rocket engine between 60% and 100% thrust for the HOP challenge.",
+      "lead": "Rob Saunders and Gus Chavez",
+      "date": "2026-10-10",
+      "thumbnail": "",
+      "thumbnailAlt": "Engine throttling prototype",
+      "featured": false
+    },
+    {
+      "slug": "castor",
+      "title": "Castor",
       "status": "Manufacturing",
       "tags": [
         "Liquid Propulsion",
         "Research & Development"
       ],
-      "summary": "Developing a 300lbf liquid bipropellant liquid rocket engine with separate impinging, film, and pintle injectors. This engine will take less time and be much easier to assemble than our previous version, improving testing cadence.",
+      "summary": "Castor is a 300 lbf ablative bipropellant engine with separate impinging, film, and pintle injectors, designed for faster assembly and a higher testing cadence.",
       "lead": "Noah Shefer, Devin Chen",
       "date": "2026-10-06",
       "thumbnail": "assets/images/ablative-engine-cutaway.png",
-      "thumbnailAlt": "Ablative Engine cutaway rendering",
+      "thumbnailAlt": "Cutaway rendering of the Castor ablative engine",
       "featured": true
     },
-    // {
-    //   "slug": "sille",
-    //   "title": "SILL-E",
-    //   "status": "Over 10 teams in the design phase",
-    //   "tags": [
-    //     "Liquid Propulsion",
-    //     "Education"
-    //   ],
-    //   "summary": "The Student Introductory Liquids Learning Engine program introduces members to liquid engine design, analysis, manufacturing, and mentored testing.",
-    //   "lead": "Lishen Lin, Ellen Poulsen",
-    //   "date": "2025",
-    //   "thumbnail": "assets/images/tau-hot-fire-2026-09-27.png",
-    //   "thumbnailAlt": "TAU engine hot-fire test",
-    //   "featured": true
-    // },
+    {
+      "slug": "pollux",
+      "title": "Pollux",
+      "status": "In development",
+      "tags": [
+        "Liquid Propulsion",
+        "Research & Development"
+      ],
+      "summary": "Pollux is Castor’s twin ablative engine, developed for the NILE test stand and integration with the thrust vector control system.",
+      "lead": "",
+      "date": "",
+      "thumbnail": "assets/images/pollux-cad.png",
+      "thumbnailAlt": "CAD rendering of the Pollux ablative engine",
+      "featured": false
+    },
+    {
+      "slug": "sille",
+      "title": "SILL-E",
+      "status": "3D modeling and preliminary design reviews",
+      "tags": [
+        "Liquid Propulsion",
+        "Education"
+      ],
+      "summary": "The Student Introductory Liquid Learning Engine program guides student teams through designing, manufacturing, and testing their own small liquid rocket engine with individual support from mentors.",
+      "lead": "Ellen Poulsen",
+      "date": "2026-10-19",
+      "thumbnail": "assets/images/sille-engine-cutaway.png",
+      "thumbnailAlt": "Cutaway CAD rendering of a SILLE engine",
+      "featured": false
+    },
     {
       "slug": "cert-rockets",
       "title": "Certification Rockets",
@@ -136,21 +152,21 @@ window.CPSS_CONTENT = {
       "thumbnailAlt": "Student certification rocket launch",
       "featured": false
     },
-    // {
-    //   "slug": "tom",
-    //   "title": "TOM Flight Computer",
-    //   "status": "[Current status]",
-    //   "tags": [
-    //     "Avionics",
-    //     "Flight Controls"
-    //   ],
-    //   "summary": "An adaptable flight computer combining onboard sensors, data logging, and LoRa telemetry around a Raspberry Pi Compute Module 5.",
-    //   "lead": "[Project lead]",
-    //   "date": "2024",
-    //   "thumbnail": "assets/images/tom-flight-computer.jpg",
-    //   "thumbnailAlt": "TOM flight computer board",
-    //   "featured": false
-    // }
+    {
+      "slug": "tom",
+      "title": "TOM Flight Computer",
+      "status": "[Current status]",
+      "tags": [
+        "Avionics",
+        "Flight Controls"
+      ],
+      "summary": "An adaptable flight computer combining onboard sensors, data logging, and LoRa telemetry around a Raspberry Pi Compute Module 5.",
+      "lead": "[Project lead]",
+      "date": "2024",
+      "thumbnail": "assets/images/tom-flight-computer.jpg",
+      "thumbnailAlt": "TOM flight computer board",
+      "featured": false
+    }
   ],
   "publications": [
     {

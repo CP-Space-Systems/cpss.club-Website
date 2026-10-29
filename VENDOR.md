@@ -1,3 +1,10 @@
+# V09 graph visibility
+
+Graph sections are hidden and their page loaders are commented out in v09, so
+the delivered pages do not request Plotly or graph datasets. The original code
+and data remain. To restore graphs, follow V09_EDITING.md. Once re-enabled,
+the preserved controller uses the CDN described below.
+
 # Plotly hosting status
 
 The requested local Plotly bundle could not be retrieved in the authoring environment: CDN, GitHub and package-registry downloads were blocked. V07 uses the same CDN approach as the approved demo so the graphs remain usable online. Other supplied assets are local.

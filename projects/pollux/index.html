@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pollux | CPSS</title>
+    <meta name="description" content="Pollux is Castor’s twin ablative engine, developed for the NILE test stand and integration with the thrust vector control system.">
+    <link rel="stylesheet" href="../../assets/css/site.css?v=10">
+    <script defer src="../../assets/data/content.js?v=10"></script>
+    <script defer src="../../assets/js/site.js?v=10"></script>
+    <link rel="preload" href="../../assets/fonts/SpaceGrotesk-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assets/css/project.css?v=10">
+    <script src="../../assets/js/project.js" defer></script>
+    <!-- GRAPH LOADER DISABLED: remove the comment markers and unhide the data section to restore.
+    <script src="../../assets/js/data-charts.js" defer></script>
+    -->
+    <link rel="preload" href="../../assets/fonts/Munistic.woff" as="font" type="font/woff" crossorigin="anonymous">
+  </head>
+  <body data-base="../../" style="--topo-image: url('../../assets/images/topo-sharp-02.svg')" class="project-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="../../">
+          <img src="../../assets/images/cpss-primary-logo.svg" alt="CPSS">
+          <span>Cal Poly Space Systems</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">Menu</button>
+        <nav id="primary-nav" aria-label="Main navigation">
+          <a href="../../">Home</a>
+          <a href="../../projects/" aria-current="page">Projects</a>
+          <a href="../../team/">The Team</a>
+          <a href="../../updates/">Updates</a>
+          <a href="../../support-us/" data-sponsorship-link="" hidden="">Sponsors</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="page-main project-main">
+      <div class="page-container">
+        <a class="back-link" href="../../projects/">← Back to Projects</a>
+        <section class="project-hero" aria-labelledby="project-title-heading">
+          <header class="project-hero-header">
+            <div class="project-meta-kicker">
+              <span class="meta-status-pill">In development</span>
+            </div>
+            <h1 id="project-title-heading" class="project-title">Pollux</h1>
+            <p class="project-tagline">Pollux is Castor’s twin ablative engine, developed for the NILE test stand and integration with the thrust vector control system.</p>
+            <div class="project-submeta-bar">
+              <div class="project-tags" aria-label="Project classifications">
+                <span class="project-tag">Liquid Propulsion</span>
+                <span class="project-tag">Research &amp; Development</span>
+              </div>
+              <div class="project-lead" hidden="">Project Lead: <strong>[Project lead]</strong>
+              </div>
+            </div>
+          </header>
+          <div class="project-splash-frame">
+            <img src="../../assets/images/pollux-cad.png" alt="CAD rendering of the Pollux ablative engine" class="project-splash-image">
+            <div class="splash-caption-bar">
+              <span>Pollux ablative engine CAD rendering</span>
+            </div>
+          </div>
+        </section>
+        <section class="specifications-band" id="specifications" aria-labelledby="specs-heading">
+          <div class="spec-band-header">
+            <h2 id="specs-heading">Design Targets &amp; Model Estimates</h2>
+          </div>
+          <!-- SPECIFICATION: duplicate one spec-item. Identify target vs measured and provide units. -->
+          <dl class="spec-grid">
+            <div class="spec-item">
+              <dt class="spec-label">Target thrust</dt>
+              <dd class="spec-value">At least 300 lbf</dd>
+            </div>
+            <div class="spec-item">
+              <dt class="spec-label">Model-predicted thrust</dt>
+              <dd class="spec-value">283.39 lbf</dd>
+            </div>
+            <div class="spec-item">
+              <dt class="spec-label">Modeled chamber pressure</dt>
+              <dd class="spec-value">270 psia</dd>
+            </div>
+            <div class="spec-item">
+              <dt class="spec-label">Calculated total mass flow</dt>
+              <dd class="spec-value">0.66799 kg/s</dd>
+            </div>
+            <div class="spec-item">
+              <dt class="spec-label">Calculated fuel mass flow</dt>
+              <dd class="spec-value">0.167 kg/s</dd>
+            </div>
+            <div class="spec-item">
+              <dt class="spec-label">Calculated oxidizer mass flow</dt>
+              <dd class="spec-value">0.50099 kg/s</dd>
+            </div>
+            <div class="spec-item">
+              <dt class="spec-label">Calculated chamber length</dt>
+              <dd class="spec-value">5.209 in</dd>
+            </div>
+            <div class="spec-item">
+              <dt class="spec-label">PDR hotfire-duration requirement</dt>
+              <dd class="spec-value">At least 10 s</dd>
+            </div>
+          </dl>
+          <p class="media-caption">Design requirements and calculation outputs from TVC PDR slides 6, 12 and 13. Model estimates are not measured hotfire results.</p>
+        </section>
+        <section class="content-section" id="background" aria-labelledby="background-heading">
+          <div class="section-head">
+            <h2 class="section-title" id="background-heading">Background &amp; Rationale</h2>
+          </div>
+          <div class="prose-measure">
+            <p>Pollux is the twin of Castor and is being developed for the NILE test stand. Its role is to support the thrust vector control project’s engine and gimbal integration.</p>
+            <p>The TVC PDR documents the engine’s sizing model and mechanical design, including an arrangement intended to support engine changes at the test stand.</p>
+          </div>
+        </section>
+        <section class="goals-section" id="goals" aria-labelledby="goals-heading">
+          <div class="section-head">
+            <h2 id="goals-heading" class="section-title">Key Mission Goals</h2>
+          </div>
+          <div class="goals-list">
+            <!-- GOAL: duplicate one goal-row and increment its number. -->
+            <div class="goal-row">
+              <div class="goal-number">01</div>
+              <div class="goal-text">Develop an ablative engine for the NILE test stand and TVC integration, with a thrust target of at least 300 lbf.</div>
+            </div>
+            <div class="goal-row">
+              <div class="goal-number">02</div>
+              <div class="goal-text">Support the TVC PDR’s planned static hotfire demonstration and controlled gimbal motion.</div>
+            </div>
+          </div>
+        </section>
+        <section class="content-section" id="work" aria-labelledby="work-heading">
+          <div class="section-head">
+            <h2 class="section-title" id="work-heading">Progress &amp; Current Work</h2>
+          </div>
+          <div class="prose-measure">
+            <p>The supplied project material includes engine CAD, a cross-section, and sizing calculations in the TVC preliminary design review. The engine is intended for NILE/TVC integration.</p>
+          </div>
+        </section>
+        <section class="timeline-section" id="timeline" aria-labelledby="timeline-heading" hidden="">
+          <div class="section-head">
+            <h2 class="section-title section-title--gold" id="timeline-heading">Development Timeline</h2>
+          </div>
+          <div class="timeline-spine">
+            <!-- MILESTONE: duplicate one milestone-item. Set status to completed, ongoing, or planned only when confirmed. -->
+            <div class="milestone-item" data-milestone-status="planned">
+              <div class="milestone-marker" aria-hidden="true">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
+              <div class="milestone-card">
+                <div class="milestone-header">
+                  <span class="milestone-date-text">[Date or TBD]</span>
+                  <span class="milestone-status-badge">Status to confirm</span>
+                </div>
+                <h3 class="milestone-title">[Milestone title]</h3>
+                <p class="milestone-summary">[Milestone summary]</p>
+                <details class="milestone-details" hidden="">
+                  <summary>Milestone details</summary>
+                  <div class="milestone-details-body">[Additional milestone details]</div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="content-section" id="images" aria-labelledby="images-heading" hidden=""">
+          <div class="section-head">
+            <h2 class="section-title" id="images-heading">Images &amp; Captions</h2>
+          </div>
+          <figure class="media-module-frame">
+            <img src="../../assets/images/pollux-cross-section.png" alt="Longitudinal CAD cross-section of the Pollux ablative engine" loading="lazy">
+            <figcaption class="media-caption">Pollux engine cross-section</figcaption>
+          </figure>
+        </section>
+        <section class="content-section" id="video" aria-labelledby="video-heading" hidden="">
+          <div class="section-head">
+            <h2 class="section-title" id="video-heading">Video</h2>
+          </div>
+          <!-- VIDEO: replace this placeholder with a titled YouTube iframe or local video with controls. -->
+          <div class="media-placeholder" role="img" aria-label="Project video">[Project video]</div>
+          <p class="media-caption" hidden="">[Video caption]</p>
+        </section>
+        <section class="content-section" id="data" aria-labelledby="data-heading" data-data-charts="" hidden="">
+          <div class="section-head">
+            <h2 id="data-heading" class="section-title">Data &amp; Telemetry Curves</h2>
+          </div>
+          <div>
+            <p class="data-note" data-chart-note>Choose a published test recording to explore its measurements.</p>
+            <div class="chart-toolbar" data-controls hidden>
+              <label>Recording <select data-dataset aria-label="Test recording"></select>
+              </label>
+              <button type="button" data-mode="zoom" aria-pressed="true">Drag to zoom</button>
+              <button type="button" data-mode="pan" aria-pressed="false">Pan</button>
+              <button type="button" data-action="in">Zoom in</button>
+              <button type="button" data-action="out">Zoom out</button>
+              <button type="button" data-action="reset">Reset full recording</button>
+              <span data-window></span>
+            </div>
+          </div>
+          <div>
+            <p data-status role="status">Test data not yet published.</p>
+            <div data-plots></div>
+            <p>
+              <a data-download hidden download>Download source CSV</a>
+            </p>
+            <noscript>JavaScript is required for interactive plots.</noscript>
+          </div>
+          <!-- CHART CONFIGURATION: see GRAPHS.md. Use site-root-relative dataset paths WITHOUT a leading slash. Units must be confirmed. -->
+          <script type="application/json" data-chart-config="">
+{
+  "datasets": []
+}
+</script>
+        </section>
+        <section class="content-section" id="documentation" aria-labelledby="documentation-heading">
+          <div class="section-head">
+            <h2 class="section-title" id="documentation-heading">Documentation &amp; Publications</h2>
+          </div>
+          <p>
+            <a href="../../assets/documents/tvc-preliminary-design-review.pptx" download="">Download TVC Preliminary Design Review (PPTX)</a>
+          </p>
+          <p>Engine requirements: slide 6. Mass flow, thrust and chamber-length calculations: slide 12. Modeled chamber pressure: slide 13. Mechanical design: slide 14.</p>
+        </section>
+        <section class="content-section" id="links" aria-labelledby="links-heading">
+          <div class="section-head">
+            <h2 class="section-title" id="links-heading">Links &amp; Repositories</h2>
+          </div>
+          <p>
+            <a href="../castor/">Castor — twin ablative engine →</a>
+          </p>
+          <p>
+            <a href="../tvc/">Thrust Vector Control →</a>
+          </p>
+        </section>
+        <section class="content-section" id="gallery" aria-labelledby="gallery-heading">
+          <div class="section-head">
+            <h2 class="section-title" id="gallery-heading">Project Gallery</h2>
+          </div>
+          <div class="carousel-container" data-project-gallery tabindex="0" aria-label="Project photographs" aria-roledescription="carousel">
+            <!-- GALLERY FIGURE: duplicate one figure to add an image. -->
+            <figure class="carousel-slide-view" data-project-slide="">
+              <img src="../../assets/images/pollux-cross-section.png" alt="CAD rendering of Pollux" loading="lazy" decoding="async">
+              <figcaption class="carousel-caption">Pollux ablative engine CAD rendering</figcaption>
+            </figure>
+            <figure class="carousel-slide-view" data-project-slide="">
+              <img src="../../assets/images/pollux-cad.png" alt="Longitudinal CAD cross-section of Pollux" loading="lazy" decoding="async">
+              <figcaption class="carousel-caption">Pollux engine cross-section</figcaption>
+            </figure>
+            <div class="carousel-controls">
+              <button type="button" class="carousel-nav-btn" data-project-prev aria-label="Previous photograph">← Previous</button>
+              <span class="carousel-position-indicator" data-project-position aria-live="polite"></span>
+              <button type="button" class="carousel-nav-btn" data-project-next aria-label="Next photograph">Next →</button>
+            </div>
+          </div>
+        </section>
+        <div style="padding-top:48px;">
+          <a class="back-link" href="../../projects/">← All projects</a>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <img src="../../assets/images/cpss-primary-logo-reversed.png" alt="CPSS" width="110">
+          <h2>Cal Poly Space Systems</h2>
+          <p>Design. Test. Launch. Recover.</p>
+        </div>
+        <nav aria-label="Footer">
+          <a href="../../projects/" aria-current="page">Projects</a>
+          <a href="../../publications/">Publications</a>
+          <a href="../../updates/">Updates</a>
+          <a href="../../team/#contact">Contact</a>
+          <a href="../../support-us/" data-sponsorship-link="" hidden="">Support CPSS</a>
+        </nav>
+        <div class="footer-social">
+          <a href="mailto:cpss@calpoly.edu">cpss@calpoly.edu</a>
+          <a href="https://www.youtube.com/@CalPolySpaceSystems" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a href="https://www.instagram.com/calpolyspacesystems/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.linkedin.com/company/cal-poly-space-systems" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <p>© Cal Poly Space Systems</p>
+        </div>
+      </div>
+    </footer>
+    <dialog id="image-dialog" aria-label="Enlarged image">
+      <button type="button" data-close-dialog>Close</button>
+      <img alt="">
+      <p></p>
+    </dialog>
+    <p class="link-notice" role="status" hidden></p>
+  </body>
+</html>

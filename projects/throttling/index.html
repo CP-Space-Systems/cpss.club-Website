@@ -4,16 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Engine Throttling | CPSS</title>
-    <meta name="description" content="To throttle rocket thrust between 60-100% to control a flight vehicle for the HOP challenge.">
-    <link rel="stylesheet" href="../../assets/css/site.css">
-    <script defer src="../../assets/data/content.js"></script>
-    <script defer src="../../assets/js/site.js"></script>
+    <meta name="description" content="Developing propellant-flow control to throttle a 300 lbf rocket engine between 60% and 100% thrust for the HOP challenge.">
+    <link rel="stylesheet" href="../../assets/css/site.css?v=10">
+    <link rel="stylesheet" href="../../assets/css/project.css?v=10">
     <link rel="preload" href="../../assets/fonts/SpaceGrotesk-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../assets/css/project.css">
-    <script src="../../assets/js/project.js" defer></script>
-    <script src="../../assets/js/data-charts.js" defer></script>
+    <script defer src="../../assets/data/content.js?v=10"></script>
+    <script defer src="../../assets/js/site.js?v=10"></script>
+    <script defer src="../../assets/js/project.js"></script>
+    <!-- GRAPH LOADER DISABLED: remove the comment markers and unhide the data section to restore.
+    <script defer src="../../assets/js/data-charts.js"></script>
+    -->
+    <link rel="preload" href="../../assets/fonts/Munistic.woff" as="font" type="font/woff" crossorigin="anonymous">
   </head>
-  <body data-base="../../" style="--topo-image: url('../../assets/images/topo-sharp-02.svg')" class="project-page">
+  <body class="project-page" data-base="../../" style="--topo-image: url('../../assets/images/topo-sharp-02.svg')">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="header-inner">
@@ -21,47 +24,60 @@
           <img src="../../assets/images/cpss-primary-logo.svg" alt="CPSS">
           <span>Cal Poly Space Systems</span>
         </a>
-        <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">Menu</button>
+        <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
+          Menu
+        </button>
         <nav id="primary-nav" aria-label="Main navigation">
           <a href="../../">Home</a>
           <a href="../../projects/" aria-current="page">Projects</a>
           <a href="../../team/">The Team</a>
           <a href="../../updates/">Updates</a>
-          <a href="../../support-us/" data-sponsorship-link hidden>Sponsors</a>
+          <a href="../../support-us/" data-sponsorship-link="" hidden="">Sponsors</a>
         </nav>
       </div>
     </header>
     <main id="main" class="page-main project-main">
       <div class="page-container">
-        <a class="back-link" href="../../projects/">← Back to Projects</a>
+        <a class="back-link" href="../../projects/">
+          ← Back to Projects
+        </a>
+        <!-- PROJECT HEADER -->
         <section class="project-hero" aria-labelledby="project-title-heading">
           <header class="project-hero-header">
             <div class="project-meta-kicker">
               <span class="meta-status-pill">Prototype development</span>
             </div>
             <h1 id="project-title-heading" class="project-title">Engine Throttling</h1>
-            <p class="project-tagline">To throttle rocket thrust between 60-100% to control a flight vehicle for the HOP challenge.</p>
+            <p class="project-tagline">Developing propellant-flow control to throttle a 300 lbf rocket engine between 60% and 100% thrust for the HOP challenge.</p>
             <div class="project-submeta-bar">
               <div class="project-tags" aria-label="Project classifications">
                 <span class="project-tag">Liquid Propulsion</span>
                 <span class="project-tag">Research &amp; Development</span>
               </div>
-              <div class="project-lead">Project Lead: <strong>Rob Saunders and Gus Chavez</strong>
+              <div class="project-lead">Project Leads: <strong>Rob Saunders and Gus Chavez</strong>
               </div>
             </div>
           </header>
-          <div class="project-splash-frame">
-            <div class="media-placeholder" role="img" aria-label="Project hero image">[Project hero image]</div>
-            <div class="splash-caption-bar">
+          <!--
+            HERO IMAGE:
+            Remove hidden once an image is available.
+            Replace the placeholder div with an img using a real local path.
+          -->
+          <div class="project-splash-frame" hidden="">
+            <div class="media-placeholder" role="img" aria-label="Project image not yet supplied">
+              [Project hero image]
+            </div>
+            <div class="splash-caption-bar" hidden="">
               <span>[Project image caption]</span>
             </div>
           </div>
         </section>
+        <!-- DESIGN TARGETS: these are not measured performance results. -->
         <section class="specifications-band" id="specifications" aria-labelledby="specs-heading">
           <div class="spec-band-header">
-            <h2 id="specs-heading">Specifications</h2>
+            <h2 id="specs-heading">Design Targets</h2>
           </div>
-          <!-- SPECIFICATION: duplicate one spec-item. Identify target vs measured and provide units. -->
+          <!-- SPECIFICATION: copy one complete spec-item to add a field. -->
           <dl class="spec-grid">
             <div class="spec-item">
               <dt class="spec-label">Nominal engine thrust</dt>
@@ -77,141 +93,257 @@
             </div>
           </dl>
         </section>
+        <!-- BACKGROUND -->
         <section class="content-section" id="background" aria-labelledby="background-heading">
           <div class="section-head">
-            <h2 class="section-title" id="background-heading">Background &amp; Rationale</h2>
+            <h2 class="section-title" id="background-heading">
+              Background &amp; Rationale
+            </h2>
           </div>
           <div class="prose-measure">
-            <p>The HOP challenge requires a vertical takeoff and landing vehicle able to throttle down to 60% of the designed thrust to be able to hover and descend in a controlled manner.</p>
+            <p>The HOP challenge requires a vertical takeoff and landing vehicle capable of throttling down to 60% of its designed thrust to hover and descend in a controlled manner. This project focuses on controlling propellant mass flow to achieve that throttle range.</p>
           </div>
         </section>
+        <!-- GOALS -->
         <section class="goals-section" id="goals" aria-labelledby="goals-heading">
           <div class="section-head">
-            <h2 id="goals-heading" class="section-title">Key Mission Goals</h2>
+            <h2 id="goals-heading" class="section-title">
+              Key Mission Goals
+            </h2>
           </div>
           <div class="goals-list">
-            <!-- GOAL: duplicate one goal-row and increment its number. -->
+            <!-- GOAL: copy one goal-row and increment its number. -->
             <div class="goal-row">
               <div class="goal-number">01</div>
-              <div class="goal-text">Control propellant mass flow to throttle a 300 lbf rocket engine down to 60% thrust.</div>
+              <div class="goal-text">
+                Control propellant mass flow to throttle a 300 lbf
+                rocket engine between 60% and 100% thrust, reaching
+                a target minimum thrust of 180 lbf.
+              </div>
             </div>
           </div>
         </section>
+        <!-- CURRENT WORK -->
         <section class="content-section" id="work" aria-labelledby="work-heading">
           <div class="section-head">
-            <h2 class="section-title" id="work-heading">Progress &amp; Current Work</h2>
+            <h2 class="section-title" id="work-heading">
+              Progress &amp; Current Work
+            </h2>
           </div>
           <div class="prose-measure">
-            <p>Valve analysis and stepper motor selection has been completed, prototyping is in progress</p>
+            <p>Valve analysis and stepper motor selection are complete. Prototyping is in progress.</p>
           </div>
         </section>
+        <!-- TIMELINE: no completion dates were supplied. -->
         <section class="timeline-section" id="timeline" aria-labelledby="timeline-heading">
           <div class="section-head">
-            <h2 class="section-title section-title--gold" id="timeline-heading">Development Timeline</h2>
+            <h2 class="section-title section-title--gold" id="timeline-heading">
+              Development Timeline
+            </h2>
           </div>
           <div class="timeline-spine">
-            <!-- MILESTONE: duplicate one milestone-item. Set status to completed, ongoing, or planned only when confirmed. -->
-            <div class="milestone-item" data-milestone-status="planned">
+            <!--
+              MILESTONE:
+              Copy one milestone-item to add another.
+              Keep the status attribute and visible badge consistent.
+            -->
+            <div class="milestone-item" data-milestone-status="completed">
               <div class="milestone-marker" aria-hidden="true">
-                <svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                  <path d="M5 12l4 4L19 6"></path>
+                </svg>
+              </div>
+              <div class="milestone-card">
+                <div class="milestone-header">
+                  <span class="milestone-date-text">
+                    Analysis &amp; Selection
+                  </span>
+                  <span class="milestone-status-badge">
+                    Completed
+                  </span>
+                </div>
+                <h3 class="milestone-title">
+                  Valve Analysis &amp; Stepper Motor Selection
+                </h3>
+                <p class="milestone-summary">
+                  Valve analysis and stepper motor selection have
+                  been completed.
+                </p>
+              </div>
+            </div>
+            <div class="milestone-item" data-milestone-status="ongoing">
+              <div class="milestone-marker" aria-hidden="true">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
                   <circle cx="12" cy="12" r="3"></circle>
                 </svg>
               </div>
               <div class="milestone-card">
                 <div class="milestone-header">
-                  <span class="milestone-date-text">[Date or TBD]</span>
-                  <span class="milestone-status-badge">Status to confirm</span>
+                  <span class="milestone-date-text">
+                    Prototype Development
+                  </span>
+                  <span class="milestone-status-badge">
+                    Ongoing
+                  </span>
                 </div>
-                <h3 class="milestone-title">[Milestone title]</h3>
-                <p class="milestone-summary">[Milestone summary]</p>
-                <details class="milestone-details">
-                  <summary>Milestone details</summary>
-                  <div class="milestone-details-body">[Additional milestone details]</div>
-                </details>
+                <h3 class="milestone-title">
+                  Throttling Prototype
+                </h3>
+                <p class="milestone-summary">
+                  Prototyping is in progress following valve analysis
+                  and stepper motor selection.
+                </p>
               </div>
             </div>
           </div>
         </section>
-        <section class="content-section" id="images" aria-labelledby="images-heading">
+        <!--
+          OPTIONAL IMAGES:
+          Remove hidden after replacing the placeholder and caption.
+        -->
+        <section class="content-section" id="images" aria-labelledby="images-heading" hidden="">
           <div class="section-head">
-            <h2 class="section-title" id="images-heading">Images &amp; Captions</h2>
+            <h2 class="section-title" id="images-heading">
+              Images &amp; Captions
+            </h2>
           </div>
           <figure class="media-module-frame">
-            <div class="media-placeholder" role="img" aria-label="Project photograph">[Project photograph]</div>
-            <figcaption class="media-caption">[Image caption]</figcaption>
+            <div class="media-placeholder" role="img" aria-label="Project photograph not yet supplied">
+              [Project photograph]
+            </div>
+            <figcaption class="media-caption" hidden="">
+              [Image caption]
+            </figcaption>
           </figure>
         </section>
-        <section class="content-section" id="video" aria-labelledby="video-heading">
+        <!--
+          OPTIONAL VIDEO:
+          Replace the placeholder with a titled iframe or a local video
+          with controls, then remove hidden from this section.
+        -->
+        <section class="content-section" id="video" aria-labelledby="video-heading" hidden="">
           <div class="section-head">
-            <h2 class="section-title" id="video-heading">Video</h2>
+            <h2 class="section-title" id="video-heading">
+              Video
+            </h2>
           </div>
-          <!-- VIDEO: replace this placeholder with a titled YouTube iframe or local video with controls. -->
-          <div class="media-placeholder" role="img" aria-label="Project video">[Project video]</div>
-          <p class="media-caption">[Video caption]</p>
+          <div class="media-placeholder" role="img" aria-label="Project video not yet supplied">
+            [Project video]
+          </div>
+          <p class="media-caption" hidden="">[Video caption]</p>
         </section>
-        <section class="content-section" id="data" aria-labelledby="data-heading" data-data-charts="">
+        <!--
+          OPTIONAL GRAPHS:
+          Add confirmed datasets below, then remove hidden from the section.
+          See GRAPHS.md. Dataset paths must not begin with a slash.
+        -->
+        <section class="content-section" id="data" aria-labelledby="data-heading" data-data-charts hidden="">
           <div class="section-head">
-            <h2 id="data-heading" class="section-title">Data &amp; Telemetry Curves</h2>
+            <h2 id="data-heading" class="section-title">
+              Data &amp; Telemetry Curves
+            </h2>
           </div>
           <div>
-            <p class="data-note" data-chart-note>Choose a published test recording to explore its measurements.</p>
+            <p class="data-note" data-chart-note>
+              Choose a published test recording to explore its measurements.
+            </p>
             <div class="chart-toolbar" data-controls hidden>
-              <label>Recording <select data-dataset aria-label="Test recording"></select>
+              <label>
+                Recording
+                <select data-dataset aria-label="Test recording">
+                </select>
               </label>
-              <button type="button" data-mode="zoom" aria-pressed="true">Drag to zoom</button>
-              <button type="button" data-mode="pan" aria-pressed="false">Pan</button>
-              <button type="button" data-action="in">Zoom in</button>
-              <button type="button" data-action="out">Zoom out</button>
-              <button type="button" data-action="reset">Reset full recording</button>
+              <button type="button" data-mode="zoom" aria-pressed="true">
+                Drag to zoom
+              </button>
+              <button type="button" data-mode="pan" aria-pressed="false">
+                Pan
+              </button>
+              <button type="button" data-action="in">
+                Zoom in
+              </button>
+              <button type="button" data-action="out">
+                Zoom out
+              </button>
+              <button type="button" data-action="reset">
+                Reset full recording
+              </button>
               <span data-window></span>
             </div>
           </div>
           <div>
-            <p data-status role="status">Test data not yet published.</p>
+            <p data-status role="status">
+              Test data not yet published.
+            </p>
             <div data-plots></div>
             <p>
               <a data-download hidden download>Download source CSV</a>
             </p>
-            <noscript>JavaScript is required for interactive plots.</noscript>
+            <noscript>
+              JavaScript is required for interactive plots.
+            </noscript>
           </div>
-          <!-- CHART CONFIGURATION: see GRAPHS.md. Use site-root-relative dataset paths WITHOUT a leading slash. Units must be confirmed. -->
-          <script type="application/json" data-chart-config="">
-{
-  "datasets": []
-}
-</script>
+          <script type="application/json" data-chart-config>
+            {
+              "datasets": []
+            }
+          </script>
         </section>
-        <section class="content-section" id="documentation" aria-labelledby="documentation-heading">
+        <!-- OPTIONAL DOCUMENTATION: add real links, then remove hidden. -->
+        <section class="content-section" id="documentation" aria-labelledby="documentation-heading" hidden="">
           <div class="section-head">
-            <h2 class="section-title" id="documentation-heading">Documentation &amp; Publications</h2>
+            <h2 class="section-title" id="documentation-heading">
+              Documentation &amp; Publications
+            </h2>
           </div>
           <p>[Add documentation links here]</p>
         </section>
-        <section class="content-section" id="links" aria-labelledby="links-heading">
+        <!-- OPTIONAL RESOURCES: add confirmed links, then remove hidden. -->
+        <section class="content-section" id="links" aria-labelledby="links-heading" hidden="">
           <div class="section-head">
-            <h2 class="section-title" id="links-heading">Links &amp; Repositories</h2>
+            <h2 class="section-title" id="links-heading">
+              Links &amp; Repositories
+            </h2>
           </div>
           <p>[Add confirmed external resource links here]</p>
         </section>
-        <section class="content-section" id="gallery" aria-labelledby="gallery-heading">
+        <!--
+          OPTIONAL GALLERY:
+          Replace the placeholder with a real image and caption.
+          Copy a complete figure to add slides, then remove hidden
+          from this section.
+        -->
+        <section class="content-section" id="gallery" aria-labelledby="gallery-heading" hidden="">
           <div class="section-head">
-            <h2 class="section-title" id="gallery-heading">Project Gallery</h2>
+            <h2 class="section-title" id="gallery-heading">
+              Project Gallery
+            </h2>
           </div>
           <div class="carousel-container" data-project-gallery tabindex="0" aria-label="Project photographs" aria-roledescription="carousel">
-            <!-- GALLERY FIGURE: duplicate one figure; use a local path and descriptive alt. -->
             <figure class="carousel-slide-view" data-project-slide>
-              <div class="media-placeholder" role="img" aria-label="Project photograph">[Project photograph]</div>
-              <figcaption class="carousel-caption">[Photo caption]</figcaption>
+              <div class="media-placeholder" role="img" aria-label="Project photograph not yet supplied">
+                [Project photograph]
+              </div>
+              <figcaption class="carousel-caption" hidden="">
+                [Photo caption]
+              </figcaption>
             </figure>
             <div class="carousel-controls">
-              <button type="button" class="carousel-nav-btn" data-project-prev aria-label="Previous photograph">← Previous</button>
-              <span class="carousel-position-indicator" data-project-position aria-live="polite"></span>
-              <button type="button" class="carousel-nav-btn" data-project-next aria-label="Next photograph">Next →</button>
+              <button type="button" class="carousel-nav-btn" data-project-prev aria-label="Previous photograph">
+                ← Previous
+              </button>
+              <span class="carousel-position-indicator" data-project-position aria-live="polite">
+              </span>
+              <button type="button" class="carousel-nav-btn" data-project-next aria-label="Next photograph">
+                Next →
+              </button>
             </div>
           </div>
         </section>
-        <div style="padding-top:48px;">
-          <a class="back-link" href="../../projects/">← All projects</a>
+        <div style="padding-top: 48px;">
+          <a class="back-link" href="../../projects/">
+            ← All projects
+          </a>
         </div>
       </div>
     </main>
@@ -227,7 +359,7 @@
           <a href="../../publications/">Publications</a>
           <a href="../../updates/">Updates</a>
           <a href="../../team/#contact">Contact</a>
-          <a href="../../support-us/" data-sponsorship-link hidden>Support CPSS</a>
+          <a href="../../support-us/" data-sponsorship-link="" hidden="">Support CPSS</a>
         </nav>
         <div class="footer-social">
           <a href="mailto:cpss@calpoly.edu">cpss@calpoly.edu</a>

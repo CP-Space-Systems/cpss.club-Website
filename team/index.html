@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Team | CPSS</title>
     <meta name="description" content="Meet the elected board, project teams, and advisor of Cal Poly Space Systems.">
-    <link rel="stylesheet" href="../assets/css/site.css">
-    <script defer src="../assets/data/content.js"></script>
-    <script defer src="../assets/js/site.js"></script>
+    <link rel="stylesheet" href="../assets/css/site.css?v=10">
+    <script defer src="../assets/data/content.js?v=10"></script>
+    <script defer src="../assets/js/site.js?v=10"></script>
     <link rel="preload" href="../assets/fonts/SpaceGrotesk-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/team.css">
+    <link rel="stylesheet" href="../assets/css/team.css?v=10">
+    <link rel="preload" href="../assets/fonts/Munistic.woff" as="font" type="font/woff" crossorigin="anonymous">
   </head>
   <body data-base="../" style="--topo-image: url('../assets/images/topo-round-02.svg')">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -25,7 +26,7 @@
           <a href="../projects/">Projects</a>
           <a href="../team/" aria-current="page">The Team</a>
           <a href="../updates/">Updates</a>
-          <a href="../support-us/" data-sponsorship-link hidden>Sponsors</a>
+          <a href="../support-us/" data-sponsorship-link="" hidden="">Sponsors</a>
         </nav>
       </div>
     </header>
@@ -43,19 +44,27 @@
               <div data-carousel tabindex="0" aria-label="Team photographs" aria-roledescription="carousel">
                 <div class="carousel-slides">
                   <!-- TEAM PHOTO FIGURE: copy one complete figure to add a slide. -->
-                  <figure data-slide="">
+                  <!-- <figure data-slide="">
                     <img src="../assets/images/photo-album-thumbnail.jpg" alt="CPSS members gathered with a rocket." class="team-group-photo" loading="eager" decoding="async">
                     <figcaption>Cal Poly Space Systems</figcaption>
-                  </figure>
+                  </figure> -->
                   <!-- TEAM PHOTO FIGURE: copy one complete figure to add a slide. -->
-                  <figure data-slide="">
-                    <img src="../assets/images/certification-team-01.jpg" alt="CPSS members with their certification rockets at a launch site." class="team-group-photo" loading="lazy" decoding="async">
-                    <figcaption>Certification rockets — at the launch site</figcaption>
-                  </figure>
                   <!-- TEAM PHOTO FIGURE: copy one complete figure to add a slide. -->
                   <figure data-slide="">
                     <img src="../assets/images/recoverable-booster-05.jpg" alt="CPSS members beside booster rocket prototype at launch site." class="team-group-photo" loading="lazy" decoding="async">
                     <figcaption>Flyback Booster — prototype launch date</figcaption>
+                  </figure>
+                  <figure data-slide="">
+                    <img src="../assets/images/certification-team-01.jpg" alt="CPSS members with their certification rockets at a launch site." class="team-group-photo" loading="lazy" decoding="async">
+                    <figcaption>Certification rockets — at the launch site</figcaption>
+                  </figure>
+                  <figure data-slide="">
+                    <img src="../assets/images/nile-team.jpg" alt="NILE team members at the Paso Robles test site following the stands first successful hotfire." class="team-group-photo" loading="lazy" decoding="async">
+                    <figcaption>NILE team members at the Paso Robles test site following the stands first successful hotfire</figcaption>
+                  </figure>
+                  <figure data-slide="">
+                    <img src="../assets/images/CPSS_team_beach.jpg" alt="CPSS Members at the beach for a bonfire." class="team-group-photo" loading="lazy" decoding="async">
+                    <figcaption>CPSS Members at the beach for a bonfire.</figcaption>
                   </figure>
                 </div>
                 <div class="carousel-controls">
@@ -69,7 +78,7 @@
             <section class="flex flex-col pt-space-xl mb-space-xl" id="team-board" aria-labelledby="board-heading">
               <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-xs pb-space-md">
                 <div>
-                  <span class="text-label-sm text-outline block mb-space-xs">Club leadership</span>
+                  <span class="text-label-sm text-outline block mb-space-xs team-eyebrow">Club leadership</span>
                   <h2 class="text-headline-lg uppercase tracking-tight text-primary section-title" id="board-heading">Elected Board</h2>
                 </div>
                 <span class="text-label-sm text-on-surface-variant">5 members</span>
@@ -81,20 +90,20 @@
                 <!-- MEMBER: Spencer Biernat. Copy the whole article to add a person. -->
                 <article id="spencer-biernat" class="flex flex-col">
                   <!-- HEADSHOT: replace the next div with an img, class="team-member-photo mb-space-md", src="../assets/images/team/spencer-biernat.jpg", alt="Portrait of Spencer Biernat", loading="lazy". -->
-                  <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Spencer Biernat">
+                  <img src="../assets/images/team/spencer-biernat.jpg" alt="Portrait of Spencer Biernat" loading="lazy" class="team-member-photo mb-space-md" decoding="async">
+                  <!-- <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Spencer Biernat">
                     <span class="team-member-initials text-primary" aria-hidden="true">SB</span>
-                    <span class="text-label-sm text-outline" aria-hidden="true"></span>
-                  </div>
+                  </div> -->
                   <h3 class="text-headline-sm uppercase tracking-tight text-on-surface">Spencer Biernat</h3>
                   <p class="text-body-md text-on-surface-variant mb-space-sm">President</p>
                 </article>
                 <!-- MEMBER: Devin Chen. Copy the whole article to add a person. -->
                 <article id="devin-chen" class="flex flex-col">
                   <!-- HEADSHOT: replace the next div with an img, class="team-member-photo mb-space-md", src="../assets/images/team/devin-chen.jpg", alt="Portrait of Devin Chen", loading="lazy". -->
-                  <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Devin Chen">
+                  <img src="../assets/images/team/devin-chen.jpg" alt="Portrait of Devin Chen" loading="lazy" class="team-member-photo mb-space-md" decoding="async">
+                  <!-- <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Devin Chen">
                     <span class="team-member-initials text-primary" aria-hidden="true">DC</span>
-                    <span class="text-label-sm text-outline" aria-hidden="true"></span>
-                  </div>
+                  </div> -->
                   <h3 class="text-headline-sm uppercase tracking-tight text-on-surface">Devin Chen</h3>
                   <p class="text-body-md text-on-surface-variant mb-space-sm">Vice President; Manufacturing Lead</p>
                 </article>
@@ -107,23 +116,23 @@
                     <a href="mailto:nshefer@calpoly.edu" class="hover:text-primary transition-colors" aria-label="Email Noah Shefer">Email</a>
                   </div>
                 </article>
-                <!-- MEMBER: Metzli Singha. Copy the whole article to add a person. -->
-                <article id="metzli-singha" class="flex flex-col">
-                  <!-- HEADSHOT: replace the next div with an img, class="team-member-photo mb-space-md", src="../assets/images/team/metzli-singha.jpg", alt="Portrait of Metzli Singha", loading="lazy". -->
-                  <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Metzli Singha">
+                <!-- MEMBER: Metztli Singha. Copy the whole article to add a person. -->
+                <article id="metztli-singha" class="flex flex-col">
+                  <!-- HEADSHOT: replace the next div with an img, class="team-member-photo mb-space-md", src="../assets/images/team/metztli-singha.jpg", alt="Portrait of Metztli Singha", loading="lazy". -->
+                  <img src="../assets/images/team/metztli-singha.jpg" alt="Portrait of Metztli Singha" loading="lazy" class="team-member-photo mb-space-md" decoding="async">
+                  <!-- <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Metztli Singha">
                     <span class="team-member-initials text-primary" aria-hidden="true">MS</span>
-                    <span class="text-label-sm text-outline" aria-hidden="true"></span>
-                  </div>
-                  <h3 class="text-headline-sm uppercase tracking-tight text-on-surface">Metzli Singha</h3>
+                  </div> -->
+                  <h3 class="text-headline-sm uppercase tracking-tight text-on-surface">Metztli Singha</h3>
                   <p class="text-body-md text-on-surface-variant mb-space-sm">Secretary; Recovery Lead</p>
                 </article>
                 <!-- MEMBER: Arjan Reyes. Copy the whole article to add a person. -->
                 <article id="arjan-reyes" class="flex flex-col">
                   <!-- HEADSHOT: replace the next div with an img, class="team-member-photo mb-space-md", src="../assets/images/team/arjan-reyes.jpg", alt="Portrait of Arjan Reyes", loading="lazy". -->
-                  <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Arjan Reyes">
+                  <img src="../assets/images/team/arjan-reyes.jpg" alt="Portrait of Arjan Reyes" loading="lazy" class="team-member-photo mb-space-md" decoding="async">
+                  <!-- <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Arjan Reyes">
                     <span class="team-member-initials text-primary" aria-hidden="true">AR</span>
-                    <span class="text-label-sm text-outline" aria-hidden="true"></span>
-                  </div>
+                  </div> -->
                   <h3 class="text-headline-sm uppercase tracking-tight text-on-surface">Arjan Reyes</h3>
                   <p class="text-body-md text-on-surface-variant mb-space-sm">PR Officer</p>
                 </article>
@@ -133,7 +142,7 @@
             <section class="flex flex-col pt-space-xl mb-space-xl" id="team-archerfish" aria-labelledby="archerfish-heading">
               <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-xs pb-space-md">
                 <div>
-                  <span class="text-label-sm text-outline block mb-space-xs">Project team</span>
+                  <span class="text-label-sm text-outline block mb-space-xs team-eyebrow">Project team</span>
                   <h2 class="text-headline-lg uppercase tracking-tight text-primary section-title" id="archerfish-heading">Archerfish</h2>
                 </div>
                 <span class="text-label-sm text-on-surface-variant">6 members</span>
@@ -147,7 +156,6 @@
                   <!-- HEADSHOT: replace the next div with an img, class="team-member-photo mb-space-md", src="../assets/images/team/jasmine-cheng.jpg", alt="Portrait of Jasmine Cheng", loading="lazy". -->
                   <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Jasmine Cheng">
                     <span class="team-member-initials text-primary" aria-hidden="true">JC</span>
-                    <span class="text-label-sm text-outline" aria-hidden="true"></span>
                   </div>
                   <h3 class="text-headline-sm uppercase tracking-tight text-on-surface">Jasmine Cheng</h3>
                   <p class="text-body-md text-on-surface-variant mb-space-sm">Project Lead</p>
@@ -157,7 +165,6 @@
                   <!-- HEADSHOT: replace the next div with an img, class="team-member-photo mb-space-md", src="../assets/images/team/kevin-quintana.jpg", alt="Portrait of Kevin Quintana", loading="lazy". -->
                   <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Kevin Quintana">
                     <span class="team-member-initials text-primary" aria-hidden="true">KQ</span>
-                    <span class="text-label-sm text-outline" aria-hidden="true"></span>
                   </div>
                   <h3 class="text-headline-sm uppercase tracking-tight text-on-surface">Kevin Quintana</h3>
                 </article>
@@ -166,7 +173,6 @@
                   <!-- HEADSHOT: replace the next div with an img, class="team-member-photo mb-space-md", src="../assets/images/team/shiv-patel.jpg", alt="Portrait of Shiv Patel", loading="lazy". -->
                   <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Shiv Patel">
                     <span class="team-member-initials text-primary" aria-hidden="true">SP</span>
-                    <span class="text-label-sm text-outline" aria-hidden="true"></span>
                   </div>
                   <h3 class="text-headline-sm uppercase tracking-tight text-on-surface">Shiv Patel</h3>
                 </article>
@@ -175,7 +181,6 @@
                   <!-- HEADSHOT: replace the next div with an img, class="team-member-photo mb-space-md", src="../assets/images/team/brandon-muck.jpg", alt="Portrait of Brandon Muck", loading="lazy". -->
                   <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Brandon Muck">
                     <span class="team-member-initials text-primary" aria-hidden="true">BM</span>
-                    <span class="text-label-sm text-outline" aria-hidden="true"></span>
                   </div>
                   <h3 class="text-headline-sm uppercase tracking-tight text-on-surface">Brandon Muck</h3>
                   <p class="text-body-md text-on-surface-variant mb-space-sm">TCA Lead</p>
@@ -185,7 +190,6 @@
                   <!-- HEADSHOT: replace the next div with an img, class="team-member-photo mb-space-md", src="../assets/images/team/anthony-casagrande.jpg", alt="Portrait of Anthony Casagrande", loading="lazy". -->
                   <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Anthony Casagrande">
                     <span class="team-member-initials text-primary" aria-hidden="true">AC</span>
-                    <span class="text-label-sm text-outline" aria-hidden="true"></span>
                   </div>
                   <h3 class="text-headline-sm uppercase tracking-tight text-on-surface">Anthony Casagrande</h3>
                   <p class="text-body-md text-on-surface-variant mb-space-sm">Pump Lead</p>
@@ -195,7 +199,6 @@
                   <!-- HEADSHOT: replace the next div with an img, class="team-member-photo mb-space-md", src="../assets/images/team/jenna-hatfield.jpg", alt="Portrait of Jenna Hatfield", loading="lazy". -->
                   <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Jenna Hatfield">
                     <span class="team-member-initials text-primary" aria-hidden="true">JH</span>
-                    <span class="text-label-sm text-outline" aria-hidden="true"></span>
                   </div>
                   <h3 class="text-headline-sm uppercase tracking-tight text-on-surface">Jenna Hatfield</h3>
                   <p class="text-body-md text-on-surface-variant mb-space-sm">Archerfish Recovery Lead</p>
@@ -206,7 +209,7 @@
             <section class="flex flex-col pt-space-xl mb-space-xl" id="team-booster" aria-labelledby="booster-heading">
               <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-xs pb-space-md">
                 <div>
-                  <span class="text-label-sm text-outline block mb-space-xs">Project team</span>
+                  <span class="text-label-sm text-outline block mb-space-xs team-eyebrow">Project team</span>
                   <h2 class="text-headline-lg uppercase tracking-tight text-primary section-title" id="booster-heading">Booster</h2>
                 </div>
                 <span class="text-label-sm text-on-surface-variant">2 members</span>
@@ -218,10 +221,10 @@
                 <!-- MEMBER: Shiva Pulmamidi. Copy the whole article to add a person. -->
                 <article id="shiva-pulmamidi" class="flex flex-col">
                   <!-- HEADSHOT: replace the next div with an img, class="team-member-photo mb-space-md", src="../assets/images/team/shiva-pulmamidi.jpg", alt="Portrait of Shiva Pulmamidi", loading="lazy". -->
-                  <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Shiva Pulmamidi">
+                  <img src="../assets/images/team/shiva-pulmamidi.jpg" alt="Portrait of Shiva Pulmamidi" loading="lazy" class="team-member-photo mb-space-md" decoding="async">
+                  <!-- <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Shiva Pulmamidi">
                     <span class="team-member-initials text-primary" aria-hidden="true">SP</span>
-                    <span class="text-label-sm text-outline" aria-hidden="true"></span>
-                  </div>
+                  </div> -->
                   <h3 class="text-headline-sm uppercase tracking-tight text-on-surface">Shiva Pulmamidi</h3>
                   <p class="text-body-md text-on-surface-variant mb-space-sm">Team Lead</p>
                 </article>
@@ -230,10 +233,9 @@
                   <!-- HEADSHOT: replace the next div with an img, class="team-member-photo mb-space-md", src="../assets/images/team/alister-haines.jpg", alt="Portrait of Alister Haines", loading="lazy". -->
                   <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Alister Haines">
                     <span class="team-member-initials text-primary" aria-hidden="true">AH</span>
-                    <span class="text-label-sm text-outline" aria-hidden="true"></span>
                   </div>
                   <h3 class="text-headline-sm uppercase tracking-tight text-on-surface">Alister Haines</h3>
-                  <p class="text-body-md text-on-surface-variant mb-space-sm">Manufacturing Lead</p>
+                  <p class="text-body-md text-on-surface-variant mb-space-sm">Structures Lead</p>
                 </article>
               </div>
             </section>
@@ -241,7 +243,7 @@
             <section class="flex flex-col pt-space-xl mb-space-xl" id="team-liquids" aria-labelledby="liquids-heading">
               <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-xs pb-space-md">
                 <div>
-                  <span class="text-label-sm text-outline block mb-space-xs">Project team</span>
+                  <span class="text-label-sm text-outline block mb-space-xs team-eyebrow">Project team</span>
                   <h2 class="text-headline-lg uppercase tracking-tight text-primary section-title" id="liquids-heading">Liquids</h2>
                 </div>
                 <span class="text-label-sm text-on-surface-variant">6 members</span>
@@ -255,7 +257,6 @@
                   <!-- HEADSHOT: replace the next div with an img, class="team-member-photo mb-space-md", src="../assets/images/team/gustavo-chavez.jpg", alt="Portrait of Gustavo Chavez", loading="lazy". -->
                   <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Gustavo Chavez">
                     <span class="team-member-initials text-primary" aria-hidden="true">GC</span>
-                    <span class="text-label-sm text-outline" aria-hidden="true"></span>
                   </div>
                   <h3 class="text-headline-sm uppercase tracking-tight text-on-surface">Gustavo Chavez</h3>
                   <p class="text-body-md text-on-surface-variant mb-space-sm">NILE Lead</p>
@@ -265,7 +266,6 @@
                   <!-- HEADSHOT: replace the next div with an img, class="team-member-photo mb-space-md", src="../assets/images/team/sloan-david-robbins.jpg", alt="Portrait of Sloan David Robbins", loading="lazy". -->
                   <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Sloan David Robbins">
                     <span class="team-member-initials text-primary" aria-hidden="true">SD</span>
-                    <span class="text-label-sm text-outline" aria-hidden="true"></span>
                   </div>
                   <h3 class="text-headline-sm uppercase tracking-tight text-on-surface">Sloan David Robbins</h3>
                   <p class="text-body-md text-on-surface-variant mb-space-sm">Regen Lead</p>
@@ -275,7 +275,6 @@
                   <!-- HEADSHOT: replace the next div with an img, class="team-member-photo mb-space-md", src="../assets/images/team/ellen-poulsen.jpg", alt="Portrait of Ellen Poulsen", loading="lazy". -->
                   <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Ellen Poulsen">
                     <span class="team-member-initials text-primary" aria-hidden="true">EP</span>
-                    <span class="text-label-sm text-outline" aria-hidden="true"></span>
                   </div>
                   <h3 class="text-headline-sm uppercase tracking-tight text-on-surface">Ellen Poulsen</h3>
                   <p class="text-body-md text-on-surface-variant mb-space-sm">SILLE Lead</p>
@@ -283,10 +282,10 @@
                 <!-- MEMBER: Calla Woodruff Lyons. Copy the whole article to add a person. -->
                 <article id="calla-woodruff-lyons" class="flex flex-col">
                   <!-- HEADSHOT: replace the next div with an img, class="team-member-photo mb-space-md", src="../assets/images/team/calla-woodruff-lyons.jpg", alt="Portrait of Calla Woodruff Lyons", loading="lazy". -->
-                  <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Calla Woodruff Lyons">
+                  <img src="../assets/images/team/calla-lyons.jpg" alt="Portrait of Calla Woodruff Lyons" loading="lazy" class="team-member-photo mb-space-md" decoding="async">
+                  <!-- <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Calla Woodruff Lyons">
                     <span class="team-member-initials text-primary" aria-hidden="true">CW</span>
-                    <span class="text-label-sm text-outline" aria-hidden="true"></span>
-                  </div>
+                  </div> -->
                   <h3 class="text-headline-sm uppercase tracking-tight text-on-surface">Calla Woodruff Lyons</h3>
                   <p class="text-body-md text-on-surface-variant mb-space-sm">Safety Officer</p>
                 </article>
@@ -295,7 +294,6 @@
                   <!-- HEADSHOT: replace the next div with an img, class="team-member-photo mb-space-md", src="../assets/images/team/alvin-he.jpg", alt="Portrait of Alvin He", loading="lazy". -->
                   <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Alvin He">
                     <span class="team-member-initials text-primary" aria-hidden="true">AH</span>
-                    <span class="text-label-sm text-outline" aria-hidden="true"></span>
                   </div>
                   <h3 class="text-headline-sm uppercase tracking-tight text-on-surface">Alvin He</h3>
                   <p class="text-body-md text-on-surface-variant mb-space-sm">NILE Electronics Lead</p>
@@ -305,7 +303,6 @@
                   <!-- HEADSHOT: replace the next div with an img, class="team-member-photo mb-space-md", src="../assets/images/team/evan.jpg", alt="Portrait of Evan", loading="lazy". -->
                   <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Evan">
                     <span class="team-member-initials text-primary" aria-hidden="true">E</span>
-                    <span class="text-label-sm text-outline" aria-hidden="true"></span>
                   </div>
                   <h3 class="text-headline-sm uppercase tracking-tight text-on-surface">Evan</h3>
                   <p class="text-body-md text-on-surface-variant mb-space-sm">NILE Software Lead</p>
@@ -316,7 +313,7 @@
             <section class="flex flex-col pt-space-xl mb-space-xl" id="team-advisor" aria-labelledby="advisor-heading">
               <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-xs pb-space-md">
                 <div>
-                  <span class="text-label-sm text-outline block mb-space-xs">Faculty advisor</span>
+                  <span class="text-label-sm text-outline block mb-space-xs team-eyebrow">Faculty advisor</span>
                   <h2 class="text-headline-lg uppercase tracking-tight text-primary section-title section-title--gold" id="advisor-heading">Advisor</h2>
                 </div>
                 <span class="text-label-sm text-on-surface-variant">1 advisor</span>
@@ -330,7 +327,6 @@
                   <!-- HEADSHOT: replace the next div with an img, class="team-member-photo mb-space-md", src="../assets/images/team/dr-dianne-deturris.jpg", alt="Portrait of Dr. Dianne Deturris", loading="lazy". -->
                   <div role="img" class="team-member-photo team-member-photo--pending bg-surface-container-low mb-space-md" aria-label="Headshot not yet added for Dr. Dianne Deturris">
                     <span class="team-member-initials text-primary" aria-hidden="true">DD</span>
-                    <span class="text-label-sm text-outline" aria-hidden="true"></span>
                   </div>
                   <h3 class="text-headline-sm uppercase tracking-tight text-on-surface">Dr. Dianne Deturris</h3>
                   <p class="text-body-md text-on-surface-variant mb-space-sm">Advisor</p>
@@ -375,7 +371,7 @@
           <a href="../publications/">Publications</a>
           <a href="../updates/">Updates</a>
           <a href="../team/#contact" aria-current="page">Contact</a>
-          <a href="../support-us/" data-sponsorship-link hidden>Support CPSS</a>
+          <a href="../support-us/" data-sponsorship-link="" hidden="">Support CPSS</a>
         </nav>
         <div class="footer-social">
           <a href="mailto:cpss@calpoly.edu">cpss@calpoly.edu</a>

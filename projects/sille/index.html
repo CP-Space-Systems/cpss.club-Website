@@ -4,14 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SILL-E | CPSS</title>
-    <meta name="description" content="The Student Introductory Liquids Learning Engine program introduces members to liquid engine design, analysis, manufacturing, and mentored testing.">
-    <link rel="stylesheet" href="../../assets/css/site.css">
-    <script defer src="../../assets/data/content.js"></script>
-    <script defer src="../../assets/js/site.js"></script>
+    <meta name="description" content="The Student Introductory Liquid Learning Engine program guides student teams through designing, manufacturing, and testing their own small liquid rocket engine with individual support from mentors.">
+    <link rel="stylesheet" href="../../assets/css/site.css?v=10">
+    <script defer src="../../assets/data/content.js?v=10"></script>
+    <script defer src="../../assets/js/site.js?v=10"></script>
     <link rel="preload" href="../../assets/fonts/SpaceGrotesk-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../assets/css/project.css">
+    <link rel="stylesheet" href="../../assets/css/project.css?v=10">
     <script src="../../assets/js/project.js" defer></script>
+    <!-- GRAPH LOADER DISABLED: remove the comment markers and unhide the data section to restore.
     <script src="../../assets/js/data-charts.js" defer></script>
+    -->
+    <link rel="preload" href="../../assets/fonts/Munistic.woff" as="font" type="font/woff" crossorigin="anonymous">
   </head>
   <body data-base="../../" style="--topo-image: url('../../assets/images/topo-sharp-02.svg')" class="project-page">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -27,7 +30,7 @@
           <a href="../../projects/" aria-current="page">Projects</a>
           <a href="../../team/">The Team</a>
           <a href="../../updates/">Updates</a>
-          <a href="../../support-us/" data-sponsorship-link hidden>Sponsors</a>
+          <a href="../../support-us/" data-sponsorship-link="" hidden="">Sponsors</a>
         </nav>
       </div>
     </header>
@@ -37,39 +40,47 @@
         <section class="project-hero" aria-labelledby="project-title-heading">
           <header class="project-hero-header">
             <div class="project-meta-kicker">
-              <span class="meta-status-pill">Over 10 teams in the design phase</span>
+              <span class="meta-status-pill">3D modeling and preliminary design reviews</span>
             </div>
             <h1 id="project-title-heading" class="project-title">SILL-E</h1>
-            <p class="project-tagline">The Student Introductory Liquids Learning Engine program introduces members to liquid engine design, analysis, manufacturing, and mentored testing.</p>
+            <p class="project-tagline">The Student Introductory Liquid Learning Engine program guides student teams through designing, manufacturing, and testing their own small liquid rocket engine with individual support from mentors.</p>
             <div class="project-submeta-bar">
               <div class="project-tags" aria-label="Project classifications">
                 <span class="project-tag">Liquid Propulsion</span>
                 <span class="project-tag">Education</span>
               </div>
-              <div class="project-lead">Project Lead: <strong>Lishen Lin, Ellen Poulsen</strong>
+              <div class="project-lead">Project Lead: <strong>Ellen Poulsen</strong>
               </div>
             </div>
           </header>
           <div class="project-splash-frame">
-            <img class="project-splash-image" src="../../assets/images/tau-hot-fire-2026-09-27.png" alt="TAU engine hot-fire test">
+            <img src="../../assets/images/sille-engine-cutaway.png" alt="Cutaway CAD rendering of a SILLE engine" class="project-splash-image">
             <div class="splash-caption-bar">
-              <span>[Project image caption]</span>
+              <span>SILLE engine cutaway CAD rendering</span>
             </div>
           </div>
         </section>
         <section class="specifications-band" id="specifications" aria-labelledby="specs-heading">
           <div class="spec-band-header">
-            <h2 id="specs-heading">Specifications</h2>
+            <h2 id="specs-heading">Program Scope &amp; Targets</h2>
           </div>
           <!-- SPECIFICATION: duplicate one spec-item. Identify target vs measured and provide units. -->
           <dl class="spec-grid">
             <div class="spec-item">
-              <dt class="spec-label">[Specification name]</dt>
-              <dd class="spec-value">[Value and units]</dd>
+              <dt class="spec-label">Engine thrust limit</dt>
+              <dd class="spec-value">Up to 50 lbf</dd>
             </div>
             <div class="spec-item">
-              <dt class="spec-label">[Specification name]</dt>
-              <dd class="spec-value">[Value and units]</dd>
+              <dt class="spec-label">Development goal</dt>
+              <dd class="spec-value">One semester</dd>
+            </div>
+            <div class="spec-item">
+              <dt class="spec-label">Design review</dt>
+              <dd class="spec-value">Required</dd>
+            </div>
+            <div class="spec-item">
+              <dt class="spec-label">Analysis and CAD tools</dt>
+              <dd class="spec-value">MATLAB / Python / SolidWorks</dd>
             </div>
           </dl>
         </section>
@@ -78,7 +89,8 @@
             <h2 class="section-title" id="background-heading">Background &amp; Rationale</h2>
           </div>
           <div class="prose-measure">
-            <p>[Project background]</p>
+            <p>SILLE introduces students to liquid rocketry in a supportive environment where no prior experience is required. Teams work with mentors to build a foundational understanding of engine-design variables, manufacturing, and testing procedures.</p>
+            <p>Working in small groups also helps newer members build connections within CPSS and gain the experience needed to contribute to other projects in the liquids subsystem.</p>
           </div>
         </section>
         <section class="goals-section" id="goals" aria-labelledby="goals-heading">
@@ -86,14 +98,14 @@
             <h2 id="goals-heading" class="section-title">Key Mission Goals</h2>
           </div>
           <div class="goals-list">
-            <!-- GOAL: duplicate one goal-row and increment its number. -->
+            <!-- GOAL: duplicate a whole goal-row and increment its number. -->
             <div class="goal-row">
               <div class="goal-number">01</div>
-              <div class="goal-text">[Project goal]</div>
+              <div class="goal-text">Develop future propulsion and test engineers by giving students hands-on experience early in their college careers.</div>
             </div>
             <div class="goal-row">
               <div class="goal-number">02</div>
-              <div class="goal-text">[Project goal]</div>
+              <div class="goal-text">Guide student teams through engine analysis, design review, manufacturing, and mentored testing.</div>
             </div>
           </div>
         </section>
@@ -102,7 +114,8 @@
             <h2 class="section-title" id="work-heading">Progress &amp; Current Work</h2>
           </div>
           <div class="prose-measure">
-            <p>[Current work]</p>
+            <p>The lecture phase is complete, and all groups have completed their initial design work. Teams are now building 3D models and presenting preliminary design reviews.</p>
+            <p>Manufacturing and testing training are next, with the goal of completing that training by the end of the semester. Hotfire dates depend on the club’s testing schedule.</p>
           </div>
         </section>
         <section class="timeline-section" id="timeline" aria-labelledby="timeline-heading">
@@ -110,21 +123,78 @@
             <h2 class="section-title section-title--gold" id="timeline-heading">Development Timeline</h2>
           </div>
           <div class="timeline-spine">
-            <!-- MILESTONE: duplicate one milestone-item. Set status to completed, ongoing, or planned only when confirmed. -->
-            <div class="milestone-item" data-milestone-status="planned">
+            <!-- MILESTONE: copy one item; dates alone do not establish completion. -->
+            <div class="milestone-item" data-milestone-status="completed">
               <div class="milestone-marker" aria-hidden="true">
-                <svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
                   <circle cx="12" cy="12" r="3"></circle>
                 </svg>
               </div>
               <div class="milestone-card">
                 <div class="milestone-header">
-                  <span class="milestone-date-text">[Date or TBD]</span>
-                  <span class="milestone-status-badge">Status to confirm</span>
+                  <span class="milestone-date-text">Lecture phase</span>
+                  <span class="milestone-status-badge">Completed</span>
                 </div>
-                <h3 class="milestone-title">[Milestone title]</h3>
-                <p class="milestone-summary">[Milestone summary]</p>
-                <details class="milestone-details">
+                <h3 class="milestone-title">Foundational lectures</h3>
+                <p class="milestone-summary">The introductory lecture phase has been completed.</p>
+                <details class="milestone-details" hidden="">
+                  <summary>Milestone details</summary>
+                  <div class="milestone-details-body">[Additional milestone details]</div>
+                </details>
+              </div>
+            </div>
+            <div class="milestone-item" data-milestone-status="completed">
+              <div class="milestone-marker" aria-hidden="true">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
+              <div class="milestone-card">
+                <div class="milestone-header">
+                  <span class="milestone-date-text">Initial design</span>
+                  <span class="milestone-status-badge">Completed</span>
+                </div>
+                <h3 class="milestone-title">Team design work</h3>
+                <p class="milestone-summary">All groups have completed their initial design work.</p>
+                <details class="milestone-details" hidden="">
+                  <summary>Milestone details</summary>
+                  <div class="milestone-details-body">[Additional milestone details]</div>
+                </details>
+              </div>
+            </div>
+            <div class="milestone-item" data-milestone-status="ongoing">
+              <div class="milestone-marker" aria-hidden="true">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
+              <div class="milestone-card">
+                <div class="milestone-header">
+                  <span class="milestone-date-text">Current phase</span>
+                  <span class="milestone-status-badge">Ongoing</span>
+                </div>
+                <h3 class="milestone-title">3D modeling &amp; preliminary design reviews</h3>
+                <p class="milestone-summary">Teams are developing 3D models and presenting their preliminary design reviews.</p>
+                <details class="milestone-details" hidden="">
+                  <summary>Milestone details</summary>
+                  <div class="milestone-details-body">[Additional milestone details]</div>
+                </details>
+              </div>
+            </div>
+            <div class="milestone-item" data-milestone-status="planned">
+              <div class="milestone-marker" aria-hidden="true">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
+              <div class="milestone-card">
+                <div class="milestone-header">
+                  <span class="milestone-date-text">End-of-semester target</span>
+                  <span class="milestone-status-badge">Planned</span>
+                </div>
+                <h3 class="milestone-title">Manufacturing &amp; testing training</h3>
+                <p class="milestone-summary">Complete manufacturing and testing training by the end of the semester. Hotfires will be scheduled around club testing availability.</p>
+                <details class="milestone-details" hidden="">
                   <summary>Milestone details</summary>
                   <div class="milestone-details-body">[Additional milestone details]</div>
                 </details>
@@ -137,19 +207,19 @@
             <h2 class="section-title" id="images-heading">Images &amp; Captions</h2>
           </div>
           <figure class="media-module-frame">
-            <img src="../../assets/images/tau-hot-fire-2026-09-27.png" alt="TAU engine hot-fire test" loading="lazy">
-            <figcaption class="media-caption">[Image caption]</figcaption>
+            <img src="../../assets/images/sille-isentropic-flow-lecture.png" alt="SILLE lecture slide covering isentropic flow equations and their assumptions" loading="lazy">
+            <figcaption class="media-caption">SILLE lecture material on isentropic flow.</figcaption>
           </figure>
         </section>
-        <section class="content-section" id="video" aria-labelledby="video-heading">
+        <section class="content-section" id="video" aria-labelledby="video-heading" hidden="">
           <div class="section-head">
             <h2 class="section-title" id="video-heading">Video</h2>
           </div>
           <!-- VIDEO: replace this placeholder with a titled YouTube iframe or local video with controls. -->
           <div class="media-placeholder" role="img" aria-label="Project video">[Project video]</div>
-          <p class="media-caption">[Video caption]</p>
+          <p class="media-caption" hidden="">[Video caption]</p>
         </section>
-        <section class="content-section" id="data" aria-labelledby="data-heading" data-data-charts="">
+        <section class="content-section" id="data" aria-labelledby="data-heading" data-data-charts="" hidden="">
           <div class="section-head">
             <h2 id="data-heading" class="section-title">Data &amp; Telemetry Curves</h2>
           </div>
@@ -181,13 +251,13 @@
 }
 </script>
         </section>
-        <section class="content-section" id="documentation" aria-labelledby="documentation-heading">
+        <section class="content-section" id="documentation" aria-labelledby="documentation-heading" hidden="">
           <div class="section-head">
             <h2 class="section-title" id="documentation-heading">Documentation &amp; Publications</h2>
           </div>
           <p>[Add documentation links here]</p>
         </section>
-        <section class="content-section" id="links" aria-labelledby="links-heading">
+        <section class="content-section" id="links" aria-labelledby="links-heading" hidden="">
           <div class="section-head">
             <h2 class="section-title" id="links-heading">Links &amp; Repositories</h2>
           </div>
@@ -198,10 +268,18 @@
             <h2 class="section-title" id="gallery-heading">Project Gallery</h2>
           </div>
           <div class="carousel-container" data-project-gallery tabindex="0" aria-label="Project photographs" aria-roledescription="carousel">
-            <!-- GALLERY FIGURE: duplicate one figure; use a local path and descriptive alt. -->
-            <figure class="carousel-slide-view" data-project-slide>
-              <img src="../../assets/images/tau-hot-fire-2026-09-27.png" alt="SILL-E project photograph 1" loading="lazy">
-              <figcaption class="carousel-caption">[Photo caption]</figcaption>
+            <!-- GALLERY FIGURE: duplicate one figure to add a photograph. -->
+            <figure class="carousel-slide-view" data-project-slide="">
+              <img src="../../assets/images/sille-engine-cutaway.png" alt="Cutaway CAD rendering of a SILLE engine" loading="lazy" decoding="async">
+              <figcaption class="carousel-caption">SILLE engine cutaway CAD rendering</figcaption>
+            </figure>
+            <figure class="carousel-slide-view" data-project-slide="">
+              <img src="../../assets/images/sille-isentropic-flow-lecture.png" alt="SILLE lecture slide on isentropic flow" loading="lazy" decoding="async">
+              <figcaption class="carousel-caption">SILLE lecture material on isentropic flow</figcaption>
+            </figure>
+            <figure class="carousel-slide-view" data-project-slide="">
+              <img src="../../assets/images/tau-hot-fire-2026-09-27.png" alt="TAU engine during a hotfire test" loading="lazy" decoding="async">
+              <figcaption class="carousel-caption">TAU engine hotfire — September 27, 2026</figcaption>
             </figure>
             <div class="carousel-controls">
               <button type="button" class="carousel-nav-btn" data-project-prev aria-label="Previous photograph">← Previous</button>
@@ -227,7 +305,7 @@
           <a href="../../publications/">Publications</a>
           <a href="../../updates/">Updates</a>
           <a href="../../team/#contact">Contact</a>
-          <a href="../../support-us/" data-sponsorship-link hidden>Support CPSS</a>
+          <a href="../../support-us/" data-sponsorship-link="" hidden="">Support CPSS</a>
         </nav>
         <div class="footer-social">
           <a href="mailto:cpss@calpoly.edu">cpss@calpoly.edu</a>

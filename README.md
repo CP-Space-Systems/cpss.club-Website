@@ -1,31 +1,31 @@
-# CPSS static website — v08
+# CPSS static website — v10
 
-Extract `cpss_static_website_v08.zip` into your Git repository. `index.html`, `assets/`, and the page folders belong directly at the repository root. No install, build step, framework, or server application is needed.
+Extract `cpss_static_website_v10.zip` into your Git repository. `index.html`, `assets/`, and the page folders belong directly at the repository root. No install, build step, framework, or server application is needed.
 
-## What changed in v08
+## What changed in v10
 
-V08 starts from your **edited v07 ZIP**. The existing homepage/project content,
-project listing, shared styles, thumbnails, graphs, galleries and hosting setup
-are preserved. No project archival feature has been added.
+V10 starts from your **edited v09 ZIP**. The existing design, body typography,
+homepage selections, project-list formatting and user content edits remain.
 
-- The Team page contains the approved 20-person roster: Elected Board,
-  Archerfish, Booster, Liquids and one Advisor. Names and roles are editable
-  directly in its HTML. Noah's supplied headshot is connected. The other four
-  uploaded headshots do not belong to the approved roster and remain as unused
-  assets; they have not been assigned to anyone else.
-- Team photographs include the current homepage hero photograph plus the two
-  supplied certification-team photographs, using the existing carousel.
-- The Spring 2026 quarterly update has its own physical page under
-  `updates/spring-2026-quarterly-update/`, is listed in Updates, and links to the
-  original PDF. Its label is a reporting period, not an invented publication date.
-- Every link to the sponsorship/support page has `data-sponsorship-link hidden`.
-  The page and anchor code remain. See `SPONSORSHIP_VISIBILITY.md` to restore them.
-- Newly supplied headshot filenames are lowercase and hyphenated under
-  `assets/images/team/`. Photo bytes are unchanged. See `TEAM_CONTENT.md`.
-- Duplicate doctypes inherited from the export are corrected.
+- The existing Ablative Engine is renamed **Castor**, at `projects/castor/`.
+  Its supplied status, specifications, goals and milestones are retained.
+- **Pollux** has its own page at `projects/pollux/`, catalog entry, thumbnail,
+  hero, cross-section and two-image gallery. It is Castor's twin for NILE/TVC.
+  Its specifications distinguish PDR requirements from model estimates.
+- Existing `projects/ablative-engine-successor/` bookmarks forward to Castor
+  using a physical HTML compatibility page. Navigation uses the new route.
+- Metztli Singha's name, profile id, alt text, comments and headshot filename
+  are corrected. The supplied headshots and NILE team photograph are retained.
+  Leading-slash portrait paths are fixed and portraits use the existing sizing.
+- The edited TVC lead, CAD and completed PDR milestone are preserved. Pollux
+  is linked directly from TVC, and the twins link to each other.
+- Graphs and unfinished modules remain hidden. Sponsorship links remain hidden
+  with their code intact. No project archival feature is added.
 
-`CHECKS.md` records v08 validation and its limits. The existing Plotly CDN
-dependency remains; see `VENDOR.md`. This revision does not change chart code.
+See `V10_EDITING.md`, `POLLUX_SOURCES.md` and `CHECKS.md` for editing instructions,
+source details and verification. Original Office files, font assets and CSVs
+are preserved byte-for-byte. Munistic remains local for headings, with Space
+Grotesk for body text. Changed styles/catalog scripts use `?v=10` query strings.
 
 ## Folder structure
 
@@ -39,11 +39,14 @@ dependency remains; see `VENDOR.md`. This revision does not change chart code.
 - `assets/js/site.js`: shared navigation, filtering/sorting, galleries, video controls, image enlargement, inquiry handling.
 - `assets/data/content.js`: project/publication/update previews and contact settings.
 - `assets/images/`: supplied photos, logos, and topo SVGs.
-- `assets/documents/`: Archerfish CDR PDF and PowerPoint.
-- `assets/fonts/`: supplied Space Grotesk variable webfont, license, and author information.
+- `assets/documents/`: supplied Archerfish/booster reviews, quarterly report, TVC PDR and TVC calculation document.
+- `assets/fonts/`: local Space Grotesk plus Munistic Regular WOFF and original TTF.
 - `projects/index.html`: all active projects, with tag filters and sorting.
 - `projects/project-template/index.html`: complete modular template for duplication.
 - `projects/<slug>/index.html`: one real page for every listed project.
+- `projects/castor/index.html`: the renamed existing engine.
+- `projects/pollux/index.html`: the NILE/TVC twin engine.
+- `projects/ablative-engine-successor/index.html`: legacy forwarder; edit Castor instead.
 - `publications/index.html`: publication directory.
 - `publications/archerfish-cdr/index.html`: supplied CDR record and downloads.
 - `publications/publication-template/index.html`: reusable record template.
@@ -58,11 +61,11 @@ dependency remains; see `VENDOR.md`. This revision does not change chart code.
 
 Edit `assets/data/content.js`. Each object in `projects` controls its preview title, status, tags, summary, lead, date, thumbnail, alt text, and homepage selection. Full project body content stays in HTML.
 
-All ten active entries from your upload remain listed. NILE's disabled draft is preserved in a comment after the catalog; it is intentionally not listed and has no detail page until activated.
+All ten existing entries remain listed, with the old engine entry renamed Castor; Pollux is the eleventh entry. NILE's disabled draft is preserved in a comment after the catalog; it is intentionally not listed and has no detail page until activated.
 
 Tags are quoted strings, such as `"Liquid Propulsion"`. Tag buttons are created automatically from the same strings used for matching. Use consistent capitalization. Sorting defaults to catalog order; name/date sorting is also available. Use a single `YYYY-MM-DD` date for date sorting. Missing or invalid dates sort last. Air Brakes retains your edited `2024` date value. A full `YYYY-MM-DD` is preferable when you know the exact date.
 
-To select homepage projects, set `featured: true` only on the chosen objects. Your upload selects Archerfish, Air Brakes, and SILL-E. `CPSS_SETTINGS.homeProjectLimit` is currently `3`; set it to `2` to show only the first two featured entries. All projects remain on the Projects directory regardless of this setting.
+To select homepage projects, set `featured: true` only on the chosen objects. Your edited upload selects Archerfish, Recoverable Booster Program, and the engine now named Castor. Pollux is not featured by default. `CPSS_SETTINGS.homeProjectLimit` is currently `3`; set it to `2` to show only the first two featured entries. All projects remain on the Projects directory regardless of this setting.
 
 Thumbnail example:
 
@@ -116,7 +119,7 @@ To add another publication, copy the publication template to a new folder and ad
 
 ## Homepage, team, updates, and support
 
-Meeting details and club text are in `index.html`. Your Monday 6:00 PM and Saturday 10:00 AM schedules were preserved. Member names, positions, headshots, group photos, and personal links are in `team/index.html`. Sponsor and support content is in `support-us/index.html`. Missing Team headshots remain clearly marked; unavailable person links are omitted. Other unfinished sponsor and project content remains editable.
+Meeting details and club text are in `index.html`. Your Monday 6:00 PM and Saturday 10:00 AM schedules were preserved. Member names, positions, headshots, group photos, and personal links are in `team/index.html`. Sponsor and support content is in `support-us/index.html`. Missing Team headshots retain their initials slots without “coming soon” labels; unavailable person links are omitted. Other unfinished sponsor and project content remains editable.
 
 Unavailable optional person/sponsor destinations are now plain text rather than fake links. To activate one, replace the span with an anchor containing the real URL. External web links use `target="_blank" rel="noopener noreferrer"`; mail links use `mailto:`.
 
@@ -134,7 +137,7 @@ Your YouTube embed and Nextcloud album-cover link remain on Home. The full-scree
 
 Add `<button type="button" data-video-toggle>Pause video</button>` inside the same hero section, and provide the referenced local files. The shared handler respects reduced motion and handles the button once per video. Use native controls and captions for foreground videos containing speech.
 
-Space Grotesk is supplied locally. Munistic remains reserved for headings but was not provided; headings fall back to Space Grotesk. Add your licensed `assets/fonts/Munistic.woff2` and enable the commented font declaration to use it.
+Space Grotesk is supplied locally. Munistic Regular is now supplied and enabled locally for headings through `Munistic.woff`, with `Munistic.ttf` as a fallback. Its actual weight is 400; it is not declared as a variable font. Space Grotesk remains the body font.
 
 Each body sets `--topo-image`. Main and local section pseudo-elements place the supplied SVGs. Shared gold variables and all v02/v03/v04 refinements are labeled in `site.css`.
 
@@ -205,3 +208,15 @@ sync with the full article. The source report is in `assets/documents/`.
 
 For Team photos and sponsorship-link visibility, see `TEAM_CONTENT.md` and
 `SPONSORSHIP_VISIBILITY.md` respectively.
+
+## V10 engine routes and optional leads
+
+Use `slug: "castor"` and `slug: "pollux"`. Their detail pages are in the matching
+folders. The old Ablative Engine route is a compatibility page, not a second
+catalog entry. To change Castor content, edit `projects/castor/index.html`.
+
+Pollux's dedicated lead and dated milestones were not explicitly supplied.
+Its catalog lead/date fields are blank; its page keeps the corresponding
+template fields hidden. An empty catalog lead now omits that preview line.
+Set a real lead in both the catalog and page when confirmed. No manufacturing
+or testing completion is inferred from the presence of CAD images.

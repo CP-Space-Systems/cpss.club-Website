@@ -1,47 +1,59 @@
-# V08 verification
+# V10 verification
 
-Starting point: the supplied `cpss_static_website_v07 edited.zip`.
+Source: the user's `cpss_static_website_v09 edited.zip`.
 
-## Performed for this revision
+- All 26 physical HTML pages and 730 local file/fragment/style references checked.
+  Active CSS/font assets and chart JSON paths resolve to real local files.
+- Every page retains consistent shared navigation/footer destinations and hidden
+  sponsorship anchors. No leading-slash local asset links remain.
+- Castor's existing specs/goals/milestones are compared directly with the uploaded
+  engine page. Pollux is a separate page using the existing project template.
+- Pollux's eight published fields are checked against the extracted/visually read
+  PDR evidence, with targets separated from model estimates. Both supplied CAD
+  images are present in the new page/gallery, with original bytes preserved.
+- The legacy Ablative Engine folder has a meta-refresh and ordinary fallback
+  link to the real Castor folder. It is absent from the catalog and listing.
+- Metztli's name, profile id, image filename and alt text are consistent. Existing
+  headshots are retained and use the shared profile-image sizing.
+- The user's TVC completed milestone/status badge/checkmark, revised lead and
+  CAD/gallery are retained. Historical CSVs, source Office/PDF files, fonts,
+  project.js, data-charts.js, project.css, team.css, CNAME and .nojekyll are unchanged.
+- JavaScript syntax checked for content.js and the three shared behavior files.
+- A minimal DOM harness initializes shared/project scripts on all 26 pages and
+  tests menus/Escape, all shared/project carousels, every tag filter, alphabetic
+  sorting, both date orders with undated Pollux last, blank-lead omission, three
+  featured homepage entries, Updates filtering and encoded mailto drafts.
+- All graph hosts remain hidden and no chart requests are made on initialization.
+  No project archival feature or separate pump project is introduced.
+- Catalog routes/images are checked. Only the renamed engine, new Pollux and
+  TVC's revised Pollux summary/CAD alt text change; other entries/settings/featured flags remain.
+- Final ZIP integrity, root structure and exclusion of Git metadata/private
+  survey exports/authoring scripts are checked. Each file is below 100 MB.
 
-- Node syntax checks passed for content.js, site.js, project.js and data-charts.js.
-- Checked 24 HTML files, 644 local file/fragment/style references, active CSS
-  assets, JSON dataset paths, catalog thumbnails and catalog page routes.
-- Verified the 20 roster names/roles against the approved list, five sections,
-  Noah's actual headshot, and three local group photographs. The four removed
-  survey members are absent from the public roster.
-- All 48 links to the sponsorship page have both `data-sponsorship-link` and
-  `hidden`. The page, destinations and original anchor code remain.
-- Structural comparison confirms the existing homepage and every project page
-  retain the edited v07 content/layout, apart from hidden sponsorship links
-  and corrected duplicate doctypes. Shared site.css is byte-identical.
-- Source comparison confirms project.js, data-charts.js, measurement CSVs,
-  CNAME and .nojekyll are unchanged. Headshot bytes are preserved after renaming.
-- The Spring 2026 article has a real physical folder route, period label,
-  linked local report PDF and working no-JavaScript listing link. Placeholder
-  articles are absent from the public catalog and remain as editing drafts.
-- A minimal DOM harness initializes shared/project behavior on all 24 pages.
-  It exercises mobile menus/Escape, shared and project carousel next/previous/
-  keyboard controls, the Team swipe control, all project-tag filters, name and
-  date sorting, three homepage features/scroll header, Updates categories,
-  publication records, and the contact form's encodeURIComponent mailto URL.
-- Catalog project/publication entries, thumbnails and homepage selections are
-  preserved. Project archival has not been implemented.
+## Limits
 
-## Practical limits
+A native browser engine is not installed. DOM tests and file checks do not
+establish native browser/device rendering, Office/PDF/video playback or actual
+email-client handoff. The original TVC PDR is supplied unchanged as a download.
+Charts are intentionally hidden; their original controller/data are preserved.
 
-No browser rendering engine is installed in this environment. DOM tests do
-not establish visual rendering, real email-client handoff, native PDF/video
-playback or native Plotly interaction. Preview these in a browser before your
-normal deployment. Plotly still uses the existing CDN configuration; see
-VENDOR.md. Its code/data were preserved rather than redeveloped in v08.
 
-Only Noah's supplied portrait matches the approved roster. Nineteen profiles
-have clearly marked photo slots. Kevin/Shiv have no invented role; Evan's
-surname and missing person contact details remain unspecified.
+## Regen content update (same v10)
 
-## Packaging
+Source: “CPSS Website Info Request form.xlsx”, Regen Engine response, Sloan Robbins.
+The page at projects/regen-engine/index.html now contains the submitted summary,
+status, leads, background, five goals, current work, design specifications and
+development timeline. The catalog summary/status match the page. Other catalog
+fields and projects are unchanged.
 
-The final ZIP is checked for integrity, root index.html/assets/CNAME/.nojekyll,
-valid file paths, and exclusion of Git metadata, development scripts, private
-survey CSVs and installation dependencies. Each asset is below 100 MB.
+All specifications are presented as submitted design/analysis values, not
+measured hotfire results. The response does not establish an absolute/gauge
+reference for pressure. The PDR is listed as October 17 without adding a year;
+future test dates remain TBD. “Indefinite” cooling is an objective, not a result.
+
+Four design-image links and the PDR link point to the supplied SharePoint files.
+The attempted image request returned HTTP 403, so no remote image is embedded,
+downloaded or claimed to be locally available. Supply exported image files to
+populate the hero, gallery and thumbnail; the existing empty modules stay hidden.
+Graphs, video and sponsorship visibility settings are unchanged.
+The private form workbook and respondent email are not included in the website.

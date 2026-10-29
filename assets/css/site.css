@@ -1,12 +1,13 @@
 /* Local styles compiled from the supplied Stitch theme. No CDN or build step needed. */
-/* Enable after placing the licensed font at assets/fonts/Munistic.woff2:
+/* v09: user-supplied Munistic Regular, served locally for headings. */
 @font-face {
-  font-family: Munistic;
-  src: url('../fonts/Munistic.woff2') format('woff2');
-  font-weight: 100 900;
+  font-family: 'Munistic';
+  src: url('../fonts/Munistic.woff') format('woff'),
+       url('../fonts/Munistic.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
   font-display: swap;
 }
-*/
 :root {
   --brand-green: #154734;
   --brand-dark: #003020;
@@ -2402,7 +2403,7 @@ h3.home-prose-title {
   }
 }
 
-.projects-directory [data-project-slug="ablative-engine-successor"] .project-media img {
+.projects-directory [data-project-slug="castor"] .project-media img {
   max-height: 360px;
   width: 100%;
   height: auto;
@@ -2424,3 +2425,12 @@ h3.home-prose-title {
 @media (max-width: 900px) { .history-layout { grid-template-columns: 1fr; gap: 28px; } .heritage-history .carousel { position: static; } }
 
 
+
+/* v09: this font is a single regular face, not a variable-weight font.
+   Keep body text in Space Grotesk and avoid synthesizing heavy headings. */
+h1, h2, h3, h4, h5, h6,
+h1[class], h2[class], h3[class], h4[class], h5[class], h6[class],
+.project-main h1, .project-main h2, .project-main h3 {
+  font-weight: 400;
+  font-synthesis: none;
+}

@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Certification Rockets | CPSS</title>
     <meta name="description" content="This project is designed to help club members develop skills in designing and building rockets by constructing scratch-built kits to certify L1 or L2 with the Tripoli Association of Rocketry. Members will learn how to use two-part epoxy, laser cutters, 3D printers, and CAD software and have many opportunities to work on experimental rockets.">
-    <link rel="stylesheet" href="../../assets/css/site.css">
-    <script defer src="../../assets/data/content.js"></script>
-    <script defer src="../../assets/js/site.js"></script>
+    <link rel="stylesheet" href="../../assets/css/site.css?v=10">
+    <script defer src="../../assets/data/content.js?v=10"></script>
+    <script defer src="../../assets/js/site.js?v=10"></script>
     <link rel="preload" href="../../assets/fonts/SpaceGrotesk-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../assets/css/project.css">
+    <link rel="stylesheet" href="../../assets/css/project.css?v=10">
     <script src="../../assets/js/project.js" defer></script>
+    <!-- GRAPH LOADER DISABLED: remove the comment markers and unhide the data section to restore.
     <script src="../../assets/js/data-charts.js" defer></script>
+    -->
+    <link rel="preload" href="../../assets/fonts/Munistic.woff" as="font" type="font/woff" crossorigin="anonymous">
   </head>
   <body data-base="../../" style="--topo-image: url('../../assets/images/topo-sharp-02.svg')" class="project-page">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -27,7 +30,7 @@
           <a href="../../projects/" aria-current="page">Projects</a>
           <a href="../../team/">The Team</a>
           <a href="../../updates/">Updates</a>
-          <a href="../../support-us/" data-sponsorship-link hidden>Sponsors</a>
+          <a href="../../support-us/" data-sponsorship-link="" hidden="">Sponsors</a>
         </nav>
       </div>
     </header>
@@ -52,7 +55,7 @@
           </header>
           <div class="project-splash-frame">
             <img class="project-splash-image" src="../../assets/images/certification-team-01.jpg" alt="Student certification rocket launch">
-            <div class="splash-caption-bar">
+            <div class="splash-caption-bar" hidden="">
               <span>[Project image caption]</span>
             </div>
           </div>
@@ -109,7 +112,7 @@
             <!-- MILESTONE: duplicate a milestone-item; keep visible status and data-milestone-status consistent. -->
             <div class="milestone-item" data-milestone-status="completed">
               <div class="milestone-marker" aria-hidden="true">
-                <svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
               </div>
@@ -120,7 +123,7 @@
                 </div>
                 <h3 class="milestone-title">Certification results</h3>
                 <p class="milestone-summary">Around 15 students earned L1 certification and one student earned L2 certification.</p>
-                <details class="milestone-details">
+                <details class="milestone-details" hidden="">
                   <summary>Milestone details</summary>
                   <div class="milestone-details-body">[Additional milestone details]</div>
                 </details>
@@ -128,7 +131,7 @@
             </div>
             <div class="milestone-item" data-milestone-status="ongoing">
               <div class="milestone-marker" aria-hidden="true">
-                <svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
                   <circle cx="12" cy="12" r="7"></circle>
                 </svg>
               </div>
@@ -139,7 +142,7 @@
                 </div>
                 <h3 class="milestone-title">Rocket construction</h3>
                 <p class="milestone-summary">Around 15 students have started L1 rockets and about six are working toward L2 certifications. Many L2 certifiers are exploring more experimental designs.</p>
-                <details class="milestone-details">
+                <details class="milestone-details" hidden="">
                   <summary>Milestone details</summary>
                   <div class="milestone-details-body">[Additional milestone details]</div>
                 </details>
@@ -147,7 +150,7 @@
             </div>
             <div class="milestone-item" data-milestone-status="planned">
               <div class="milestone-marker" aria-hidden="true">
-                <svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
                   <circle cx="12" cy="12" r="3"></circle>
                 </svg>
               </div>
@@ -158,7 +161,7 @@
                 </div>
                 <h3 class="milestone-title">Certification launches</h3>
                 <p class="milestone-summary">Launch is tentatively planned for early spring semester. Exact dates are not supplied.</p>
-                <details class="milestone-details">
+                <details class="milestone-details" hidden="">
                   <summary>Milestone details</summary>
                   <div class="milestone-details-body">[Additional milestone details]</div>
                 </details>
@@ -211,8 +214,8 @@
             </p>
             <noscript>JavaScript is required for interactive plots.</noscript>
           </div> -->
-          <!-- CHART CONFIGURATION: see GRAPHS.md. Use site-root-relative dataset paths WITHOUT a leading slash. Units must be confirmed. -->
-          <!-- <script type="application/json" data-chart-config="">
+        <!-- CHART CONFIGURATION: see GRAPHS.md. Use site-root-relative dataset paths WITHOUT a leading slash. Units must be confirmed. -->
+        <!-- <script type="application/json" data-chart-config="">
 {
   "datasets": []
 }
@@ -238,15 +241,15 @@
             <!-- GALLERY FIGURE: duplicate one figure; use a local path and descriptive alt. -->
             <figure class="carousel-slide-view" data-project-slide>
               <img src="../../assets/images/certification-team-01.jpg" alt="Certification Rockets project photograph 1" loading="lazy">
-              <figcaption class="carousel-caption">[Photo caption]</figcaption>
+              <figcaption class="carousel-caption" hidden="">[Photo caption]</figcaption>
             </figure>
             <figure class="carousel-slide-view" data-project-slide hidden="hidden">
               <img src="../../assets/images/certification-team-02.jpeg" alt="Certification Rockets — project photograph" loading="lazy">
-              <figcaption class="carousel-caption">[Photo caption]</figcaption>
+              <figcaption class="carousel-caption" hidden="">[Photo caption]</figcaption>
             </figure>
             <figure class="carousel-slide-view" data-project-slide hidden="hidden">
               <img src="../../assets/images/certification-launch-02.png" alt="Certification Rockets — project photograph" loading="lazy">
-              <figcaption class="carousel-caption">[Photo caption]</figcaption>
+              <figcaption class="carousel-caption" hidden="">[Photo caption]</figcaption>
             </figure>
             <figure class="carousel-slide-view" data-project-slide hidden="hidden">
               <img src="../../assets/images/certification-rocket-cad.png" alt="Certification Rockets — Rocket CAD rendering" loading="lazy">
@@ -258,7 +261,7 @@
             </figure>
             <figure class="carousel-slide-view" data-project-slide hidden="hidden">
               <img src="../../assets/images/certification-launch-01.jpg" alt="Certification Rockets project photograph 2" loading="lazy">
-              <figcaption class="carousel-caption">[Photo caption]</figcaption>
+              <figcaption class="carousel-caption" hidden="">[Photo caption]</figcaption>
             </figure>
             <div class="carousel-controls">
               <button type="button" class="carousel-nav-btn" data-project-prev aria-label="Previous photograph">← Previous</button>
@@ -284,7 +287,7 @@
           <a href="../../publications/">Publications</a>
           <a href="../../updates/">Updates</a>
           <a href="../../team/#contact">Contact</a>
-          <a href="../../support-us/" data-sponsorship-link hidden>Support CPSS</a>
+          <a href="../../support-us/" data-sponsorship-link="" hidden="">Support CPSS</a>
         </nav>
         <div class="footer-social">
           <a href="mailto:cpss@calpoly.edu">cpss@calpoly.edu</a>
