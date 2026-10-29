@@ -16,22 +16,22 @@ window.CPSS_CONTENT = {
       "thumbnailAlt": "Archerfish liquid rocket",
       "featured": true
     },
-    {
-      "slug": "air-brakes",
-      "title": "Bebop",
-      "status": "Ready to Launch.",
-      "tags": [
-        "Flight Vehicles",
-        "Flight Controls",
-        "Avionics"
-      ],
-      "summary": "Bebop is a launch vehicle with an active air-brake subsystem that controls apogee using flight-computer sensor data and a PID controller.",
-      "lead": "Brian Payne",
-      "date": "2024",
-      "thumbnail": "assets/images/bebop-02.jpg",
-      "thumbnailAlt": "Bebop air-brake mechanism",
-      "featured": false
-    },
+    // {
+    //   "slug": "air-brakes",
+    //   "title": "Bebop",
+    //   "status": "Ready to Launch.",
+    //   "tags": [
+    //     "Flight Vehicles",
+    //     "Flight Controls",
+    //     "Avionics"
+    //   ],
+    //   "summary": "Bebop is a launch vehicle with an active air-brake subsystem that controls apogee using flight-computer sensor data and a PID controller.",
+    //   "lead": "Brian Payne",
+    //   "date": "2024",
+    //   "thumbnail": "assets/images/bebop-02.jpg",
+    //   "thumbnailAlt": "Bebop air-brake mechanism",
+    //   "featured": false
+    // },
     {
       "slug": "flyback-boosters",
       "title": "Recoverable Booster Program",
@@ -77,21 +77,21 @@ window.CPSS_CONTENT = {
       "thumbnailAlt": "CAD assembly showing TVC integration with the NILE test stand",
       "featured": false
     },
-    {
-      "slug": "throttling",
-      "title": "Engine Throttling",
-      "status": "Prototype development",
-      "tags": [
-        "Liquid Propulsion",
-        "Research & Development"
-      ],
-      "summary": "Developing propellant-flow control to throttle a 300 lbf rocket engine between 60% and 100% thrust for the HOP challenge.",
-      "lead": "Rob Saunders and Gus Chavez",
-      "date": "2026-10-10",
-      "thumbnail": "",
-      "thumbnailAlt": "Engine throttling prototype",
-      "featured": false
-    },
+    // {
+    //   "slug": "throttling",
+    //   "title": "Engine Throttling",
+    //   "status": "Prototype development",
+    //   "tags": [
+    //     "Liquid Propulsion",
+    //     "Research & Development"
+    //   ],
+    //   "summary": "Developing propellant-flow control to throttle a 300 lbf rocket engine between 60% and 100% thrust for the HOP challenge.",
+    //   "lead": "Rob Saunders and Gus Chavez",
+    //   "date": "2026-10-10",
+    //   "thumbnail": "",
+    //   "thumbnailAlt": "Engine throttling prototype",
+    //   "featured": false
+    // },
     {
       "slug": "castor",
       "title": "Castor",
@@ -152,21 +152,21 @@ window.CPSS_CONTENT = {
       "thumbnailAlt": "Student certification rocket launch",
       "featured": false
     },
-    {
-      "slug": "tom",
-      "title": "TOM Flight Computer",
-      "status": "[Current status]",
-      "tags": [
-        "Avionics",
-        "Flight Controls"
-      ],
-      "summary": "An adaptable flight computer combining onboard sensors, data logging, and LoRa telemetry around a Raspberry Pi Compute Module 5.",
-      "lead": "[Project lead]",
-      "date": "2024",
-      "thumbnail": "assets/images/tom-flight-computer.jpg",
-      "thumbnailAlt": "TOM flight computer board",
-      "featured": false
-    }
+    // {
+    //   "slug": "tom",
+    //   "title": "TOM Flight Computer",
+    //   "status": "[Current status]",
+    //   "tags": [
+    //     "Avionics",
+    //     "Flight Controls"
+    //   ],
+    //   "summary": "An adaptable flight computer combining onboard sensors, data logging, and LoRa telemetry around a Raspberry Pi Compute Module 5.",
+    //   "lead": "[Project lead]",
+    //   "date": "2024",
+    //   "thumbnail": "assets/images/tom-flight-computer.jpg",
+    //   "thumbnailAlt": "TOM flight computer board",
+    //   "featured": false
+    // }
   ],
   "publications": [
     {
